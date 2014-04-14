@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>TemplateCache | Official Backbone.Marionette Doc</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="This Doc is build for developers so that it&#39;s easier to read and examine Marionettejs doc.
+Built using [Gitbook](https://github.com/GitbookIO/gitbook).">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../../marionette/view/view.html" />
+        
+        
+        <link rel="prev" href="../../marionette/configuration/renderer.html" />
+        
+
+        <meta property="og:title" content="TemplateCache | Official Backbone.Marionette Doc">
+        <meta property="og:site_name" content="Official Backbone.Marionette Doc">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+    <div class="book" data-github="alchapone/marionette.doc" data-level="6.2" data-basepath="../.." data-revision="1397508706791">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/alchapone/marionette.doc" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    
+    <a href="https://github.com/alchapone/marionette.doc/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/marionette.doc/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1><a href="../../" >Official Backbone.Marionette Doc</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/marionette.doc/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/marionette.doc/edit/master/marionette/configuration/template_cache.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        
+        <li data-level="0" data-path="index.html">
+            <a href="../../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="marionette/functions.html">
+                
+                <a href="../../marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1.</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="marionette/application.html">
+                
+                <a href="../../marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2.</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="marionette/application_module.html">
+                
+                <a href="../../marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="marionette/app_router.html">
+                
+                <a href="../../marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4.</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="marionette/controller.html">
+                
+                <a href="../../marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5.</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="marionette/configuration/configuration.html">
+                
+                <a href="../../marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6.</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="marionette/configuration/renderer.html">
+                            
+                            <a href="../../marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1.</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="marionette/configuration/template_cache.html">
+                            
+                            <a href="../../marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2.</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="marionette/view/view.html">
+                
+                <a href="../../marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7.</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="marionette/view/item_view.html">
+                            
+                            <a href="../../marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1.</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="marionette/view/collection_view.html">
+                            
+                            <a href="../../marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2.</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="marionette/view/composite_view.html">
+                            
+                            <a href="../../marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3.</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="marionette/view/layout.html">
+                            
+                            <a href="../../marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4.</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="marionette/regions/region.html">
+                
+                <a href="../../marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8.</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="marionette/regions/region_manager.html">
+                            
+                            <a href="../../marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1.</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="marionette/behavior/behavior.html">
+                
+                <a href="../../marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9.</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="marionette/behavior/behaviors.html">
+                            
+                            <a href="../../marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1.</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 47.05882352941177%;min-width: 41.1764705882353%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../../marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../../marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../../marionette/application_module.html" title="Application Module" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../../marionette/app_router.html" title="App Router" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../../marionette/controller.html" title="Controller" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../../marionette/configuration/configuration.html" title="Configuration" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../../marionette/configuration/renderer.html" title="Renderer" class="chapter done " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../../marionette/configuration/template_cache.html" title="TemplateCache" class="chapter done " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../../marionette/view/view.html" title="View" class="chapter  new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../../marionette/view/item_view.html" title="Item View" class="chapter  " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../../marionette/view/collection_view.html" title="Collection View" class="chapter  " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../../marionette/view/composite_view.html" title="Composite View" class="chapter  " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../../marionette/view/layout.html" title="Layout" class="chapter  " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../../marionette/regions/region.html" title="Regions" class="chapter  new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../../marionette/regions/region_manager.html" title="Region Manager" class="chapter  " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../../marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../../marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_9">
+                    
+                        <h1 id="marionette-templatecache">Marionette.TemplateCache</h1>
+<p>The <code>TemplateCache</code> provides a cache for retrieving templates
+from script blocks in your HTML. This will improve
+the speed of subsequent calls to get a template.</p>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#clear-items-from-cache">Clear Items From cache</a></li>
+<li><a href="#customizing-template-access">Customizing Template Access</a></li>
+<li><a href="#override-template-retrieval">Override Template Retrieval</a></li>
+<li><a href="#override-template-compilation">Override Template Compilation</a></li>
+</ul>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>To use the <code>TemplateCache</code>, call the <code>get</code> method on TemplateCache directly.
+Internally, instances of the TemplateCache type will be created and stored
+but you do not have to manually create these instances yourself. <code>get</code> will
+return a compiled template function.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> template = Backbone.Marionette.TemplateCache.get(<span class="hljs-string">"#my-template"</span>);
+<span class="hljs-comment">// use the template</span>
+template({param1:<span class="hljs-string">'value1'</span>, paramN:<span class="hljs-string">'valueN'</span>});
+</code></pre>
+<p>Making multiple calls to get the same template will retrieve the
+template from the cache on subsequence calls.</p>
+<h3 id="clear-items-from-cache">Clear Items From cache</h3>
+<p>You can clear one or more, or all items from the cache using the
+<code>clear</code> method. Clearing a template from the cache will force it
+to re-load from the DOM (via the <code>loadTemplate</code>
+function which can be overridden, see below) the next time it is retrieved.</p>
+<p>If you do not specify any parameters, all items will be cleared
+from the cache:</p>
+<pre><code class="lang-js">Backbone.Marionette.TemplateCache.get(<span class="hljs-string">"#my-template"</span>);
+Backbone.Marionette.TemplateCache.get(<span class="hljs-string">"#this-template"</span>);
+Backbone.Marionette.TemplateCache.get(<span class="hljs-string">"#that-template"</span>);
+
+<span class="hljs-comment">// clear all templates from the cache</span>
+Backbone.Marionette.TemplateCache.clear()
+</code></pre>
+<p>If you specify one or more parameters, these parameters are assumed
+to be the <code>templateId</code> used for loading / caching:</p>
+<pre><code class="lang-js">Backbone.Marionette.TemplateCache.get(<span class="hljs-string">"#my-template"</span>);
+Backbone.Marionette.TemplateCache.get(<span class="hljs-string">"#this-template"</span>);
+Backbone.Marionette.TemplateCache.get(<span class="hljs-string">"#that-template"</span>);
+
+<span class="hljs-comment">// clear 2 of 3 templates from the cache</span>
+Backbone.Marionette.TemplateCache.clear(<span class="hljs-string">"#my-template"</span>, <span class="hljs-string">"#this-template"</span>)
+</code></pre>
+<h2 id="customizing-template-access">Customizing Template Access</h2>
+<p>If you want to use an alternate template engine while
+still taking advantage of the template caching functionality, or want to customize
+how templates are stored and retrieved, you will need to customize the
+<code>TemplateCache object</code>. The default operation of <code>TemplateCache</code>, is to
+retrieve templates from the DOM based on the containing element&#39;s id
+attribute, and compile the html in that element with the underscore.js
+<code>template</code> function.</p>
+<h3 id="override-template-retrieval">Override Template Retrieval</h3>
+<p>The default template retrieval is to select the template contents
+from the DOM using jQuery. If you wish to change the way this
+works, you can override the <code>loadTemplate</code> method on the
+<code>TemplateCache</code> object.</p>
+<pre><code class="lang-js">Backbone.Marionette.TemplateCache.prototype.loadTemplate = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(templateId)</span>{</span>
+  <span class="hljs-comment">// load your template here, returning the data needed for the compileTemplate</span>
+  <span class="hljs-comment">// function. For example, you have a function that creates templates based on the</span>
+  <span class="hljs-comment">// value of templateId</span>
+  <span class="hljs-keyword">var</span> myTemplate = myTemplateFunc(templateId);
+
+  <span class="hljs-comment">// send the template back</span>
+  <span class="hljs-keyword">return</span> myTemplate;
+}
+</code></pre>
+<h3 id="override-template-compilation">Override Template Compilation</h3>
+<p>The default template compilation passes the results from
+<code>loadTemplate</code> to the <code>compileTemplate</code> function, which returns
+an underscore.js compiled template function. When overriding <code>compileTemplate</code>
+remember that it must return a function which takes an object of parameters and values
+and returns a formatted HTML string.</p>
+<pre><code class="lang-js">Backbone.Marionette.TemplateCache.prototype.compileTemplate = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(rawTemplate)</span> {</span>
+  <span class="hljs-comment">// use Handlebars.js to compile the template</span>
+  <span class="hljs-keyword">return</span> Handlebars.compile(rawTemplate);
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../marionette/configuration/renderer.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../marionette/view/view.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <link rel="stylesheet" href="../../gitbook/style.css">
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../../gitbook/app.js"></script>
+        
+    </body>
+</html>

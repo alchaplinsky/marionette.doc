@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Composite View | Official Backbone.Marionette Doc</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="This Doc is build for developers so that it&#39;s easier to read and examine Marionettejs doc.
+Built using [Gitbook](https://github.com/GitbookIO/gitbook).">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../../marionette/view/layout.html" />
+        
+        
+        <link rel="prev" href="../../marionette/view/collection_view.html" />
+        
+
+        <meta property="og:title" content="Composite View | Official Backbone.Marionette Doc">
+        <meta property="og:site_name" content="Official Backbone.Marionette Doc">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+    <div class="book" data-github="alchapone/marionette.doc" data-level="7.3" data-basepath="../.." data-revision="1397508706791">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/alchapone/marionette.doc" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    
+    <a href="https://github.com/alchapone/marionette.doc/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/marionette.doc/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1><a href="../../" >Official Backbone.Marionette Doc</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/marionette.doc/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/marionette.doc/edit/master/marionette/view/composite_view.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        
+        <li data-level="0" data-path="index.html">
+            <a href="../../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="marionette/functions.html">
+                
+                <a href="../../marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1.</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="marionette/application.html">
+                
+                <a href="../../marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2.</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="marionette/application_module.html">
+                
+                <a href="../../marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="marionette/app_router.html">
+                
+                <a href="../../marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4.</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="marionette/controller.html">
+                
+                <a href="../../marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5.</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="marionette/configuration/configuration.html">
+                
+                <a href="../../marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6.</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="marionette/configuration/renderer.html">
+                            
+                            <a href="../../marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1.</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="marionette/configuration/template_cache.html">
+                            
+                            <a href="../../marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2.</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="marionette/view/view.html">
+                
+                <a href="../../marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7.</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="marionette/view/item_view.html">
+                            
+                            <a href="../../marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1.</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="marionette/view/collection_view.html">
+                            
+                            <a href="../../marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2.</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="marionette/view/composite_view.html">
+                            
+                            <a href="../../marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3.</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="marionette/view/layout.html">
+                            
+                            <a href="../../marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4.</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="marionette/regions/region.html">
+                
+                <a href="../../marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8.</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="marionette/regions/region_manager.html">
+                            
+                            <a href="../../marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1.</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="marionette/behavior/behavior.html">
+                
+                <a href="../../marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9.</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="marionette/behavior/behaviors.html">
+                            
+                            <a href="../../marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1.</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 70.58823529411765%;min-width: 64.70588235294117%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../../marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../../marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../../marionette/application_module.html" title="Application Module" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../../marionette/app_router.html" title="App Router" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../../marionette/controller.html" title="Controller" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../../marionette/configuration/configuration.html" title="Configuration" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../../marionette/configuration/renderer.html" title="Renderer" class="chapter done " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../../marionette/configuration/template_cache.html" title="TemplateCache" class="chapter done " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../../marionette/view/view.html" title="View" class="chapter done new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../../marionette/view/item_view.html" title="Item View" class="chapter done " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../../marionette/view/collection_view.html" title="Collection View" class="chapter done " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../../marionette/view/composite_view.html" title="Composite View" class="chapter done " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../../marionette/view/layout.html" title="Layout" class="chapter  " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../../marionette/regions/region.html" title="Regions" class="chapter  new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../../marionette/regions/region_manager.html" title="Region Manager" class="chapter  " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../../marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../../marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_15">
+                    
+                        <h1 id="marionette-compositeview">Marionette.CompositeView</h1>
+<p>A <code>CompositeView</code> extends from <code>CollectionView</code> to be used as a
+composite view for scenarios where it should represent both a
+branch and leaf in a tree structure, or for scenarios where a
+collection needs to be rendered within a wrapper template.</p>
+<p>Please see
+<a href="collection_view.html">the Marionette.CollectionView documentation</a>
+for more information on available features and functionality.</p>
+<p>Additionally, interactions with Marionette.Region
+will provide features such as <code>onShow</code> callbacks, etc. Please see
+<a href="/marionette/regions/region.html">the Region documentation</a> for more information.</p>
+<h2 id="example-usage-tree-view">Example Usage: Tree View</h2>
+<p>For example, if you&#39;re rendering a treeview control, you may
+want to render a collection view with a model and template so
+that it will show a parent item with children in the tree.</p>
+<p>You can specify a <code>modelView</code> to use for the model. If you don&#39;t
+specify one, it will default to the <code>Marionette.ItemView</code>.</p>
+<pre><code class="lang-js">CompositeView = Backbone.Marionette.CompositeView.extend({
+  template: <span class="hljs-string">"#leaf-branch-template"</span>
+});
+
+<span class="hljs-keyword">new</span> CompositeView({
+  model: someModel,
+  collection: someCollection
+});
+</code></pre>
+<p>For more examples, see my blog post on
+<a href="http://lostechies.com/derickbailey/2012/04/05/composite-views-tree-structures-tables-and-more/" target="_blank">using the composite view.</a></p>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#composite-model-template">Composite Model <code>template</code></a></li>
+<li><a href="#compositeviews-itemviewcontainer">CompositeView&#39;s <code>itemViewContainer</code></a></li>
+<li><a href="#compositeviews-appendhtml">CompositeView&#39;s <code>appendHtml</code></a></li>
+<li><a href="#recursive-by-default">Recursive By Default</a></li>
+<li><a href="#model-and-collection-rendering">Model And Collection Rendering</a></li>
+<li><a href="#events-and-callbacks">Events And Callbacks</a></li>
+<li><a href="#organizing-ui-elements">Organizing UI elements</a></li>
+<li><a href="#modelevents-and-collectionevents">modelEvents and collectionEvents</a></li>
+</ul>
+<h2 id="composite-model-template-">Composite Model <code>template</code></h2>
+<p>When a <code>CompositeView</code> is rendered, the <code>model</code> will be rendered
+with the <code>template</code> that the view is configured with. You can
+override the template by passing it in as a constructor option:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">new</span> MyComp({
+  template: <span class="hljs-string">"#some-template"</span>
+});
+</code></pre>
+<h2 id="compositeview-s-itemviewcontainer-">CompositeView&#39;s <code>itemViewContainer</code></h2>
+<p>By default the composite view uses the same <code>appendHtml</code> method that the
+collection view provides. This means the view will call jQuery&#39;s <code>.append</code>
+to move the HTML contents from the item view instance in to the collection
+view&#39;s <code>el</code>.</p>
+<p>This is typically not very useful as a composite view will usually render
+a container DOM element in which the item views should be placed.</p>
+<p>For example, if you are building a table view, and want to append each
+item from the collection in to the <code>&lt;tbody&gt;</code> of the table, you might
+do this with a template:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"row-template"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/html"</span>&gt;</span><span class="javascript">
+  &lt;td&gt;<span class="xml"><span class="vbscript">&lt;%= someData %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="vbscript">&lt;%= moreData %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="vbscript">&lt;%= stuff %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"table-template"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/html"</span>&gt;</span><span class="javascript">
+  &lt;table&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Some Column<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Another Column<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Still More<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- want to insert collection items, here --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">tfoot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">colspan</span>=<span class="hljs-value">"3"</span>&gt;</span>some footer information<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tfoot</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>To get your itemView instances to render within the <code>&lt;tbody&gt;</code> of this
+table structure, specify an <code>itemViewContainer</code> in your composite view,
+like this:</p>
+<pre><code class="lang-js">RowView = Backbone.Marionette.ItemView.extend({
+  tagName: <span class="hljs-string">"tr"</span>,
+  template: <span class="hljs-string">"#row-template"</span>
+});
+
+TableView = Backbone.Marionette.CompositeView.extend({
+  itemView: RowView,
+
+  <span class="hljs-comment">// specify a jQuery selector to put the itemView instances in to</span>
+  itemViewContainer: <span class="hljs-string">"tbody"</span>,
+
+  template: <span class="hljs-string">"#table-template"</span>
+});
+</code></pre>
+<p>This will put all of the <code>itemView</code> instances in to the <code>&lt;tbody&gt;</code> tag of
+the composite view&#39;s rendered template, correctly producing the table
+structure.</p>
+<p>Alternatively, you can specify a function as the <code>itemViewContainer</code>. This
+function needs to return a jQuery selector string, or a jQuery selector
+object.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> TableView = Backbone.Marionette.CompositeView.extend({
+  <span class="hljs-comment">// ...</span>
+
+  itemViewContainer: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"#tbody"</span>
+  }
+});
+</code></pre>
+<p>Using a function allows for logic to be used for the selector. However,
+only one value can be returned. Upon returning the first value, it will
+be cached and that value will be used for the remainder of that view
+instance&#39; lifecycle.</p>
+<p>Alternatively, the <code>itemViewContainer</code> can be supplied in the constructor
+function options:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> myComp = <span class="hljs-keyword">new</span> Marionette.CompositeView({
+  <span class="hljs-comment">// ...,</span>
+
+  itemViewContainer: <span class="hljs-string">"#tbody"</span>
+});
+</code></pre>
+<h2 id="compositeview-s-appendhtml-">CompositeView&#39;s <code>appendHtml</code></h2>
+<p>Sometimes the <code>itemViewContainer</code> configuration is insuficient for
+specifying where the itemView instance should be placed. If this is the
+case, you can override the <code>appendHtml</code> method with your own implementation.</p>
+<p>For more information on this method, see the <a href="collection_view.html">CollectionView&#39;s documentation</a>.</p>
+<h2 id="recursive-by-default">Recursive By Default</h2>
+<p>The default rendering mode for a <code>CompositeView</code> assumes a
+hierarchical, recursive structure. If you configure a composite
+view without specifying an <code>itemView</code>, you&#39;ll get the same
+composite view type rendered for each item in the collection. If
+you need to override this, you can specify a <code>itemView</code> in the
+composite view&#39;s definition:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ItemView = Backbone.Marionette.ItemView.extend({});
+
+<span class="hljs-keyword">var</span> CompView = Backbone.Marionette.CompositeView.extend({
+  itemView: ItemView
+});
+</code></pre>
+<h2 id="model-and-collection-rendering">Model And Collection Rendering</h2>
+<p>The model and collection for the composite view will re-render
+themselves under the following conditions:</p>
+<ul>
+<li>When the collection&#39;s &quot;reset&quot; event is fired, it will only re-render the collection within the composite, and not the wrapper template</li>
+<li>When the collection has a model added to it (the &quot;add&quot; event is fired), it will render that one item to the rendered list</li>
+<li>When the collection has a model removed (the &quot;remove&quot; event is fired), it will remove that one item from the rendered list</li>
+</ul>
+<p>You can also manually re-render either or both of them:</p>
+<ul>
+<li>If you want to re-render everything, call the <code>.render()</code> method</li>
+<li>If you want to re-render the model&#39;s view, you can call <code>.renderModel()</code></li>
+</ul>
+<h2 id="events-and-callbacks">Events And Callbacks</h2>
+<p>During the course of rendering a composite, several events will
+be triggered. These events are triggered with the <a href="/marionette/functions.html">Marionette.triggerMethod</a>
+function, which calls a corresponding &quot;on{EventName}&quot; method on the view.</p>
+<ul>
+<li>&quot;composite:model:rendered&quot; / <code>onCompositeModelRendered</code> - after the <code>modelView</code> has been rendered</li>
+<li>&quot;composite:collection:before:render&quot; / <code>onCompositeCollectionBeforeRender</code> - before the collection of models is rendered</li>
+<li>&quot;composite:collection:rendered&quot; / <code>onCompositeCollectionRendered</code> - after the collection of models has been rendered</li>
+<li>&quot;render&quot; / <code>onRender</code> and &quot;composite:rendered&quot; / <code>onCompositeRendered</code> - after everything has been rendered</li>
+</ul>
+<p>Additionally, after the composite view has been rendered, an
+<code>onRender</code> method will be called. You can implement this in
+your view to provide custom code for dealing with the view&#39;s
+<code>el</code> after it has been rendered:</p>
+<pre><code class="lang-js">Backbone.Marionette.CompositeView.extend({
+  onRender: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// do stuff here</span>
+  }
+});
+</code></pre>
+<h2 id="organizing-ui-elements">Organizing UI elements</h2>
+<p>Similar to ItemView, you can organize the UI elements inside the
+CompositeView by specifying them in the <code>UI</code> hash. It should be
+noted that the elements that can be accessed via this hash are
+the elements that are directly rendered by the composite view
+template, not those belonging to the collection.</p>
+<p>The UI elements will be accessible as soon as the composite view
+template is rendered (and before the collection is rendered),
+which means you can even access them in the <code>onBeforeRender</code> method.</p>
+<h2 id="modelevents-and-collectionevents">modelEvents and collectionEvents</h2>
+<p>CompositeViews can bind directly to model events and collection events
+in a declarative manner:</p>
+<pre><code class="lang-js">Marionette.CompositeView.extend({
+  modelEvents: {
+    <span class="hljs-string">"change"</span>: <span class="hljs-string">"modelChanged"</span>
+  },
+
+  collectionEvents: {
+    <span class="hljs-string">"add"</span>: <span class="hljs-string">"modelAdded"</span>
+  }
+});
+</code></pre>
+<p>For more information, see the <a href="view.html">Marionette.View</a> documentation.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../marionette/view/collection_view.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../marionette/view/layout.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <link rel="stylesheet" href="../../gitbook/style.css">
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../../gitbook/app.js"></script>
+        
+    </body>
+</html>

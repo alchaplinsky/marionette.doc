@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Application | Official Backbone.Marionette Doc</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="This Doc is build for developers so that it&#39;s easier to read and examine Marionettejs doc.
+Built using [Gitbook](https://github.com/GitbookIO/gitbook).">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../marionette/application_module.html" />
+        
+        
+        <link rel="prev" href="../marionette/functions.html" />
+        
+
+        <meta property="og:title" content="Application | Official Backbone.Marionette Doc">
+        <meta property="og:site_name" content="Official Backbone.Marionette Doc">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+    <div class="book" data-github="alchapone/marionette.doc" data-level="2" data-basepath=".." data-revision="1397508706791">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/alchapone/marionette.doc" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    
+    <a href="https://github.com/alchapone/marionette.doc/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/marionette.doc/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1><a href="../" >Official Backbone.Marionette Doc</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/marionette.doc/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/marionette.doc/edit/master/marionette/application.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="marionette/functions.html">
+                
+                <a href="../marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1.</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="marionette/application.html">
+                
+                <a href="../marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2.</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="marionette/application_module.html">
+                
+                <a href="../marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="marionette/app_router.html">
+                
+                <a href="../marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4.</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="marionette/controller.html">
+                
+                <a href="../marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5.</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="marionette/configuration/configuration.html">
+                
+                <a href="../marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6.</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="marionette/configuration/renderer.html">
+                            
+                            <a href="../marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1.</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="marionette/configuration/template_cache.html">
+                            
+                            <a href="../marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2.</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="marionette/view/view.html">
+                
+                <a href="../marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7.</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="marionette/view/item_view.html">
+                            
+                            <a href="../marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1.</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="marionette/view/collection_view.html">
+                            
+                            <a href="../marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2.</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="marionette/view/composite_view.html">
+                            
+                            <a href="../marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3.</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="marionette/view/layout.html">
+                            
+                            <a href="../marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4.</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="marionette/regions/region.html">
+                
+                <a href="../marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8.</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="marionette/regions/region_manager.html">
+                            
+                            <a href="../marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1.</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="marionette/behavior/behavior.html">
+                
+                <a href="../marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9.</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="marionette/behavior/behaviors.html">
+                            
+                            <a href="../marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1.</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 11.764705882352942%;min-width: 5.882352941176471%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../marionette/application_module.html" title="Application Module" class="chapter  new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../marionette/app_router.html" title="App Router" class="chapter  new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../marionette/controller.html" title="Controller" class="chapter  new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../marionette/configuration/configuration.html" title="Configuration" class="chapter  new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../marionette/configuration/renderer.html" title="Renderer" class="chapter  " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../marionette/configuration/template_cache.html" title="TemplateCache" class="chapter  " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../marionette/view/view.html" title="View" class="chapter  new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../marionette/view/item_view.html" title="Item View" class="chapter  " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../marionette/view/collection_view.html" title="Collection View" class="chapter  " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../marionette/view/composite_view.html" title="Composite View" class="chapter  " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../marionette/view/layout.html" title="Layout" class="chapter  " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../marionette/regions/region.html" title="Regions" class="chapter  new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../marionette/regions/region_manager.html" title="Region Manager" class="chapter  " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_3">
+                    
+                        <h1 id="marionette-application">Marionette.Application</h1>
+<p>The <code>Backbone.Marionette.Application</code> object is the hub of your composite
+application. It organizes, initializes and coordinates the various pieces of your
+app. It also provides a starting point for you to call into, from your HTML
+script block or from your JavaScript files directly if you prefer to go that
+route.</p>
+<p>The <code>Application</code> is meant to be instantiated directly, although you can extend
+it to add your own functionality.</p>
+<pre><code class="lang-js">MyApp = <span class="hljs-keyword">new</span> Backbone.Marionette.Application();
+</code></pre>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#adding-initializers">Adding Initializers</a></li>
+<li><a href="#application-event">Application Event</a></li>
+<li><a href="#starting-an-application">Starting An Application</a></li>
+<li><a href="#messaging-systems">Messaging Systems</a><ul>
+<li><a href="#event-aggregator">Event Aggregator</a></li>
+<li><a href="#request-response">Request Response</a></li>
+<li><a href="#commands">Commands</a></li>
+</ul>
+</li>
+<li><a href="#regions-and-the-application-object">Regions And The Application Object</a><ul>
+<li><a href="#jquery-selector">jQuery Selector</a></li>
+<li><a href="#custom-region-type">Custom Region Type</a></li>
+<li><a href="#custom-region-type-and-selector">Custom Region Type And Selector</a></li>
+<li><a href="#get-region-by-name">Get Region By Name</a></li>
+<li><a href="#removing-regions">Removing Regions</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="adding-initializers">Adding Initializers</h2>
+<p>Your application needs to do useful things, like displaying content in your
+regions, starting up your routers, and more. To accomplish these tasks and
+ensure that your <code>Application</code> is fully configured, you can add initializer
+callbacks to the application.</p>
+<pre><code class="lang-js">MyApp.addInitializer(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(options)</span>{</span>
+  <span class="hljs-comment">// do useful stuff here</span>
+  <span class="hljs-keyword">var</span> myView = <span class="hljs-keyword">new</span> MyView({
+    model: options.someModel
+  });
+  MyApp.mainRegion.show(myView);
+});
+
+MyApp.addInitializer(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(options)</span>{</span>
+  <span class="hljs-keyword">new</span> MyAppRouter();
+  Backbone.history.start();
+});
+</code></pre>
+<p>These callbacks will be executed when you start your application,
+and are bound to the application object as the context for
+the callback. In other words, <code>this</code> is the <code>MyApp</code> object, inside
+of the initializer function.</p>
+<p>The <code>options</code> parameters is passed from the <code>start</code> method (see below).</p>
+<p>Initializer callbacks are guaranteed to run, no matter when you
+add them to the app object. If you add them before the app is
+started, they will run when the <code>start</code> method is called. If you
+add them after the app is started, they will run immediately.</p>
+<h2 id="application-event">Application Event</h2>
+<p>The <code>Application</code> object raises a few events during its lifecycle, using the
+<a href="/marionette/functions.html">Marionette.triggerMethod</a> function. These events
+can be used to do additional processing of your application. For example, you
+may want to pre-process some data just before initialization happens. Or you may
+want to wait until your entire application is initialized to start the
+<code>Backbone.history</code>.</p>
+<p>The events that are currently triggered, are:</p>
+<ul>
+<li><strong>&quot;initialize:before&quot; / <code>onInitializeBefore</code></strong>: fired just before the initializers kick off</li>
+<li><strong>&quot;initialize:after&quot; / <code>onInitializeAfter</code></strong>: fires just after the initializers have finished</li>
+<li><strong>&quot;start&quot; / <code>onStart</code></strong>: fires after all initializers and after the initializer events</li>
+</ul>
+<pre><code class="lang-js">MyApp.on(<span class="hljs-string">"initialize:before"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(options)</span>{</span>
+  options.moreData = <span class="hljs-string">"Yo dawg, I heard you like options so I put some options in your options!"</span>
+});
+
+MyApp.on(<span class="hljs-string">"initialize:after"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(options)</span>{</span>
+  <span class="hljs-keyword">if</span> (Backbone.history){
+    Backbone.history.start();
+  }
+});
+</code></pre>
+<p>The <code>options</code> parameter is passed through the <code>start</code> method of the application
+object (see below).</p>
+<h2 id="starting-an-application">Starting An Application</h2>
+<p>Once you have your application configured, you can kick everything off by
+calling: <code>MyApp.start(options)</code>.</p>
+<p>This function takes a single optional parameter. This parameter will be passed
+to each of your initializer functions, as well as the initialize events. This
+allows you to provide extra configuration for various parts of your app, at
+initialization/start of the app, instead of just at definition.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> options = {
+  something: <span class="hljs-string">"some value"</span>,
+  another: <span class="hljs-string">"#some-selector"</span>
+};
+
+MyApp.start(options);
+</code></pre>
+<h2 id="messaging-systems">Messaging Systems</h2>
+<p>Application instances have an instance of all three <a href="http://en.wikipedia.org/wiki/Message_passing" target="_blank">messaging systems</a> of <code>Backbone.Wreqr</code> attached to them. This
+section will give a brief overview of the systems; for a more in-depth look you are encouraged to read
+the <a href="https://github.com/marionettejs/backbone.wreqr" target="_blank"><code>Backbone.Wreqr</code> documentation</a>.</p>
+<h3 id="event-aggregator">Event Aggregator</h3>
+<p>The Event Aggregator is available through the <code>vent</code> property. <code>vent</code> is convenient for passively sharing information between
+pieces of your application as events occur.</p>
+<pre><code class="lang-js">MyApp = <span class="hljs-keyword">new</span> Backbone.Marionette.Application();
+
+<span class="hljs-comment">// Alert the user on the 'minutePassed' event</span>
+MyApp.vent.on(<span class="hljs-string">"minutePassed"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(someData)</span>{</span>
+  alert(<span class="hljs-string">"Received"</span>, someData);
+});
+
+<span class="hljs-comment">// This will emit an event with the value of window.someData every minute</span>
+window.setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  MyApp.vent.trigger(<span class="hljs-string">"minutePassed"</span>, window.someData);
+}, <span class="hljs-number">1000</span> * <span class="hljs-number">60</span>);
+</code></pre>
+<h3 id="request-response">Request Response</h3>
+<p>Request Response is a means for any component to request information from another component without being tightly coupled. An instance of Request Response is available on the Application as the <code>reqres</code> property.</p>
+<pre><code class="lang-js">MyApp = <span class="hljs-keyword">new</span> Backbone.Marionette.Application();
+
+<span class="hljs-comment">// Set up a handler to return a todoList based on type</span>
+MyApp.reqres.setHandler(<span class="hljs-string">"todoList"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(type)</span>{</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.todoLists[type];
+});
+
+<span class="hljs-comment">// Make the request to get the grocery list</span>
+<span class="hljs-keyword">var</span> groceryList = MyApp.reqres.request(<span class="hljs-string">"todoList"</span>, <span class="hljs-string">"groceries"</span>);
+
+<span class="hljs-comment">// The request method can also be accessed directly from the application object</span>
+<span class="hljs-keyword">var</span> groceryList = MyApp.request(<span class="hljs-string">"todoList"</span>, <span class="hljs-string">"groceries"</span>);
+</code></pre>
+<h3 id="commands">Commands</h3>
+<p>Commands is used to make any component tell another component to perform an action without a direct reference to it. A Commands instance is available under the <code>commands</code> property of the Application.</p>
+<p>Note that the callback of a command is not meant to return a value.</p>
+<pre><code class="lang-js">MyApp = <span class="hljs-keyword">new</span> Backbone.Marionette.Application();
+
+MyApp.model = <span class="hljs-keyword">new</span> Backbone.Model();
+
+<span class="hljs-comment">// Set up the handler to call fetch on the model</span>
+MyApp.commands.setHandler(<span class="hljs-string">"fetchData"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(reset)</span>{</span>
+  MyApp.model.fetch({reset: reset});
+});
+
+<span class="hljs-comment">// Order that the data be fetched</span>
+MyApp.commands.execute(<span class="hljs-string">"fetchData"</span>, <span class="hljs-literal">true</span>);
+
+<span class="hljs-comment">// The execute function is also available directly from the application</span>
+MyApp.execute(<span class="hljs-string">"fetchData"</span>, <span class="hljs-literal">true</span>);
+</code></pre>
+<h2 id="regions-and-the-application-object">Regions And The Application Object</h2>
+<p>Marionette&#39;s <code>Region</code> objects can be directly added to an application by
+calling the <code>addRegions</code> method.</p>
+<p>There are three syntax forms for adding a region to an application object.</p>
+<h3 id="jquery-selector">jQuery Selector</h3>
+<p>The first is to specify a jQuery selector as the value of the region
+definition. This will create an instance of a Marionette.Region directly,
+and assign it to the selector:</p>
+<pre><code class="lang-js">MyApp.addRegions({
+  someRegion: <span class="hljs-string">"#some-div"</span>,
+  anotherRegion: <span class="hljs-string">"#another-div"</span>
+});
+</code></pre>
+<h3 id="custom-region-type">Custom Region Type</h3>
+<p>The second is to specify a custom region type, where the region type has
+already specified a selector:</p>
+<pre><code class="lang-js">MyCustomRegion = Marionette.Region.extend({
+  el: <span class="hljs-string">"#foo"</span>
+});
+
+MyApp.addRegions({
+  someRegion: MyCustomRegion
+});
+</code></pre>
+<h3 id="custom-region-type-and-selector">Custom Region Type And Selector</h3>
+<p>The third method is to specify a custom region type, and a jQuery selector
+for this region instance, using an object literal:</p>
+<pre><code class="lang-js">MyCustomRegion = Marionette.Region.extend({});
+
+MyApp.addRegions({
+
+  someRegion: {
+    selector: <span class="hljs-string">"#foo"</span>,
+    regionType: MyCustomRegion
+  },
+
+  anotherRegion: {
+    selector: <span class="hljs-string">"#bar"</span>,
+    regionType: MyCustomRegion
+  }
+
+});
+</code></pre>
+<h3 id="get-region-by-name">Get Region By Name</h3>
+<p>A region can be retrieved by name, using the <code>getRegion</code> method:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = <span class="hljs-keyword">new</span> Marionette.Application();
+app.addRegions({ r1: <span class="hljs-string">"#region1"</span> });
+
+<span class="hljs-comment">// r1 === r1Again; true</span>
+<span class="hljs-keyword">var</span> r1 = app.getRegion(<span class="hljs-string">"r1"</span>);
+<span class="hljs-keyword">var</span> r1Again = app.r1;
+</code></pre>
+<p>Accessing a region by named attribute is equivalent to accessing
+it from the <code>getRegion</code> method.</p>
+<h3 id="removing-regions">Removing Regions</h3>
+<p>Regions can also be removed with the <code>removeRegion</code> method, passing in
+the name of the region to remove as a string value:</p>
+<pre><code class="lang-js">MyApp.removeRegion(<span class="hljs-string">'someRegion'</span>);
+</code></pre>
+<p>Removing a region will properly close it before removing it from the
+application object.</p>
+<p>For more information on regions, see <a href="/marionette/regions/region.html">the region documentation</a></p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../marionette/functions.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../marionette/application_module.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+    </body>
+</html>
