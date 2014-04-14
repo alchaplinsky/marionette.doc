@@ -1,9 +1,10 @@
-# Backbone.Marionette
+# Official Backbone.Marionette Doc
 
-Make your Backbone.js apps dance!
+This Doc is build for developers so that it's easier to read and examine Marionettejs doc.
+Built using [Gitbook](https://github.com/GitbookIO/gitbook).
 
 
-## About Marionette
+## Backbone.Marionette
 
 Backbone.Marionette is a composite application library for Backbone.js that
 aims to simplify the construction of large scale JavaScript applications.
