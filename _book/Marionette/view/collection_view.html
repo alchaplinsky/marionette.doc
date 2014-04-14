@@ -1,0 +1,864 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Collection View | Marionette.js</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="Book generated using GitBook">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../../Marionette/view/composite_view.html" />
+        
+        
+        <link rel="prev" href="../../Marionette/view/item_view.html" />
+        
+
+        <meta property="og:title" content="Collection View | Marionette.js">
+        <meta property="og:site_name" content="Marionette.js">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="alchapone/backbone-marionette" data-level="7.2" data-basepath="../.." data-revision="1397492473730">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/alchapone/backbone-marionette" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/alchapone/backbone-marionette/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/backbone-marionette/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../../" >Marionette.js</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/edit/master/Marionette/view/collection_view.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="Marionette/functions.html">
+                
+                <a href="../../Marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="Marionette/application.html">
+                
+                <a href="../../Marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="Marionette/application_module.html">
+                
+                <a href="../../Marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="Marionette/app_router.html">
+                
+                <a href="../../Marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4)</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="Marionette/controller.html">
+                
+                <a href="../../Marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="Marionette/configuration/configuration.html">
+                
+                <a href="../../Marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="Marionette/configuration/renderer.html">
+                            
+                            <a href="../../Marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1)</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="Marionette/configuration/template_cache.html">
+                            
+                            <a href="../../Marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2)</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="Marionette/view/view.html">
+                
+                <a href="../../Marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7)</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="Marionette/view/item_view.html">
+                            
+                            <a href="../../Marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1)</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="Marionette/view/collection_view.html">
+                            
+                            <a href="../../Marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2)</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="Marionette/view/composite_view.html">
+                            
+                            <a href="../../Marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3)</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="Marionette/view/layout.html">
+                            
+                            <a href="../../Marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4)</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="Marionette/regions/region.html">
+                
+                <a href="../../Marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="Marionette/regions/region_manager.html">
+                            
+                            <a href="../../Marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1)</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="Marionette/behavior/behavior.html">
+                
+                <a href="../../Marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9)</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="Marionette/behavior/behaviors.html">
+                            
+                            <a href="../../Marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1)</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 64.70588235294117%;min-width: 58.8235294117647%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../../Marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../../Marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../../Marionette/application_module.html" title="Application Module" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../../Marionette/app_router.html" title="App Router" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../../Marionette/controller.html" title="Controller" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../../Marionette/configuration/configuration.html" title="Configuration" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../../Marionette/configuration/renderer.html" title="Renderer" class="chapter done " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../../Marionette/configuration/template_cache.html" title="TemplateCache" class="chapter done " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../../Marionette/view/view.html" title="View" class="chapter done new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../../Marionette/view/item_view.html" title="Item View" class="chapter done " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../../Marionette/view/collection_view.html" title="Collection View" class="chapter done " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../../Marionette/view/composite_view.html" title="Composite View" class="chapter  " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../../Marionette/view/layout.html" title="Layout" class="chapter  " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../../Marionette/regions/region.html" title="Regions" class="chapter  new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../../Marionette/regions/region_manager.html" title="Region Manager" class="chapter  " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../../Marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../../Marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_13">
+                    
+                        <h1 id="marionette-collectionview">Marionette.CollectionView</h1>
+<p>The <code>CollectionView</code> will loop through all of the models in the
+specified collection, render each of them using a specified <code>itemView</code>,
+then append the results of the item view&#39;s <code>el</code> to the collection view&#39;s
+<code>el</code>.</p>
+<p>CollectionView extends directly from Marionette.View. Please see
+<a href="marionette.view.md">the Marionette.View documentation</a>
+for more information on available features and functionality.</p>
+<p>Additionally, interactions with Marionette.Region
+will provide features such as <code>onShow</code> callbacks, etc. Please see
+<a href="marionette.region.md">the Region documentation</a> for more information.</p>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#collectionviews-itemview">CollectionView&#39;s <code>itemView</code></a><ul>
+<li><a href="#collectionviews-getitemview">CollectionView&#39;s <code>getItemView</code></a></li>
+<li><a href="#collectionviews-itemviewoptions">CollectionView&#39;s <code>itemViewOptions</code></a></li>
+<li><a href="#collectionviews-itemvieweventprefix">CollectionView&#39;s <code>itemViewEventPrefix</code></a></li>
+<li><a href="#collectionviews-itemevents">CollectionView&#39;s <code>itemEvents</code></a></li>
+<li><a href="#collectionviews-builditemview">CollectionView&#39;s <code>buildItemView</code></a></li>
+<li><a href="#collectionviews-additemview">CollectionView&#39;s <code>addItemView</code></a></li>
+</ul>
+</li>
+<li><a href="#collectionviews-emptyview">CollectionView&#39;s <code>emptyView</code></a><ul>
+<li><a href="#collectionviews-getemptyview">CollectionView&#39;s <code>getEmptyView</code></a></li>
+</ul>
+</li>
+<li><a href="#callback-methods">Callback Methods</a><ul>
+<li><a href="#onbeforerender-callback">onBeforeRender callback</a></li>
+<li><a href="#onrender-callback">onRender callback</a></li>
+<li><a href="#beforeclose-callback">onBeforeClose callback</a></li>
+<li><a href="#onclose-callback">onClose callback</a></li>
+<li><a href="#onbeforeitemadded-callback">onBeforeItemAdded callback</a></li>
+<li><a href="#onafteritemadded-callback">onAfterItemAdded callback</a></li>
+<li><a href="#onitemremoved-callback">onItemRemoved callback</a></li>
+</ul>
+</li>
+<li><a href="#collectionview-events">CollectionView Events</a><ul>
+<li><a href="#beforerender-event">&quot;before:render&quot; event</a></li>
+<li><a href="#render-event">&quot;render&quot; event</a></li>
+<li><a href="#beforeclose-event">&quot;before:close&quot; event</a></li>
+<li><a href="#closed--collectionclosed-event">&quot;closed&quot; / &quot;collection:closed&quot; event</a></li>
+<li><a href="#beforeitemadded--afteritemadded-event">&quot;before:item:added&quot; / &quot;after:item:added&quot; event</a></li>
+<li><a href="#itemremoved-event">&quot;item:removed&quot; event</a></li>
+<li><a href="#itemview-event-bubbling-from-child-views">&quot;itemview:*&quot; event bubbling from child views</a></li>
+</ul>
+</li>
+<li><a href="#collectionview-render">CollectionView render</a></li>
+<li><a href="#collectionview-automatic-rendering">CollectionView: Automatic Rendering</a></li>
+<li><a href="#collectionview-re-render-collection">CollectionView: Re-render Collection</a></li>
+<li><a href="#collectionviews-appendhtml">CollectionView&#39;s appendHtml</a></li>
+<li><a href="#collectionviews-children">CollectionView&#39;s children</a></li>
+<li><a href="#collectionview-close">CollectionView close</a></li>
+</ul>
+<h2 id="collectionview-s-itemview-">CollectionView&#39;s <code>itemView</code></h2>
+<p>Specify an <code>itemView</code> in your collection view definition. This must be
+a Backbone view object definition, not an instance. It can be any
+<code>Backbone.View</code> or be derived from <code>Marionette.ItemView</code>.</p>
+<pre><code class="lang-js">MyItemView = Backbone.Marionette.ItemView.extend({});
+
+Backbone.Marionette.CollectionView.extend({
+  itemView: MyItemView
+});
+</code></pre>
+<p>Item views must be defined before they are referenced by the
+<code>itemView</code> attribute in a collection view definition. Use <code>getItemView</code>
+to lookup the definition as child views are instantiated.</p>
+<p>Alternatively, you can specify an <code>itemView</code> in the options for
+the constructor:</p>
+<pre><code class="lang-js">MyCollectionView = Backbone.Marionette.CollectionView.extend({...});
+
+<span class="hljs-keyword">new</span> MyCollectionView({
+  itemView: MyItemView
+});
+</code></pre>
+<p>If you do not specify an <code>itemView</code>, an exception will be thrown
+stating that you must specify an <code>itemView</code>.</p>
+<h3 id="collectionview-s-getitemview-">CollectionView&#39;s <code>getItemView</code></h3>
+<p>The value returned by this method is the <code>ItemView</code> class that will be instantiated when a <code>Model</code> needs to be initially rendered.
+This method also gives you the ability to customize per <code>Model</code> <code>ItemViews</code>.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  getItemView: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item)</span> {</span>
+    <span class="hljs-comment">// some logic to calculate which view to return</span>
+    <span class="hljs-keyword">return</span> someItemSpecificView;
+  }
+});
+</code></pre>
+<h3 id="collectionview-s-itemviewoptions-">CollectionView&#39;s <code>itemViewOptions</code></h3>
+<p>There may be scenarios where you need to pass data from your parent
+collection view in to each of the itemView instances. To do this, provide
+a <code>itemViewOptions</code> definition on your collection view as an object
+literal. This will be passed to the constructor of your itemView as part
+of the <code>options</code>.</p>
+<pre><code class="lang-js">ItemView = Backbone.Marionette.ItemView({
+  initialize: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(options)</span>{</span>
+    console.log(options.foo); <span class="hljs-comment">// =&gt; "bar"</span>
+  }
+});
+
+CollectionView = Backbone.Marionette.CollectionView({
+  itemView: ItemView,
+
+  itemViewOptions: {
+    foo: <span class="hljs-string">"bar"</span>
+  }
+});
+</code></pre>
+<p>You can also specify the <code>itemViewOptions</code> as a function, if you need to
+calculate the values to return at runtime. The model will be passed into
+the function should you need access to it when calculating
+<code>itemViewOptions</code>. The function must return an object, and the attributes
+of the object will be copied to the <code>itemView</code> instance&#39;s options.</p>
+<pre><code class="lang-js">CollectionView = Backbone.Marionette.CollectionView({
+  itemViewOptions: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(model, index)</span> {</span>
+    <span class="hljs-comment">// do some calculations based on the model</span>
+    <span class="hljs-keyword">return</span> {
+      foo: <span class="hljs-string">"bar"</span>,
+      itemIndex: index
+    }
+  }
+});
+</code></pre>
+<h3 id="collectionview-s-itemvieweventprefix-">CollectionView&#39;s <code>itemViewEventPrefix</code></h3>
+<p>You can customize the event prefix for events that are forwarded
+through the collection view. To do this, set the <code>itemViewEventPrefix</code>
+on the collection view.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> CV = Marionette.CollectionView.extend({
+  itemViewEventPrefix: <span class="hljs-string">"some:prefix"</span>
+});
+
+<span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> CV({
+  collection: myCol
+});
+
+c.on(<span class="hljs-string">"some:prefix:render"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+  <span class="hljs-comment">// item view was rendered</span>
+});
+
+c.render();
+</code></pre>
+<p>The <code>itemViewEventPrefix</code> can be provided in the view definition or
+in the constructor function call, to get a view instance.</p>
+<h3 id="collectionview-s-itemevents-">CollectionView&#39;s <code>itemEvents</code></h3>
+<p>You can specify an <code>itemEvents</code> hash or method which allows you to capture all bubbling itemEvents without having to manually set bindings. The keys of the hash can either be a function or a string that is the name of a method on the collection view.</p>
+<pre><code class="lang-js">itemEvents: {
+  <span class="hljs-string">"render"</span>: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    console.log(<span class="hljs-string">"an itemView has been rendered"</span>);
+  },
+  <span class="hljs-string">"onItemClose"</span>: <span class="hljs-string">"someFn"</span> <span class="hljs-comment">// where the collection view has a method `someFn`</span>
+}
+</code></pre>
+<p>You can also use a method for <code>itemEvents</code> that returns a hash.</p>
+<pre><code class="lang-js">itemEvents: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-string">"render"</span>: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      console.log(<span class="hljs-string">"an itemView has been rendered"</span>);
+    }
+  }
+}
+</code></pre>
+<h3 id="collectionview-s-builditemview-">CollectionView&#39;s <code>buildItemView</code></h3>
+<p>When a custom view instance needs to be created for the <code>itemView</code> that
+represents an item, override the <code>buildItemView</code> method. This method
+takes three parameters and returns a view instance to be used as the
+item view.</p>
+<pre><code class="lang-js">buildItemView: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item, ItemViewType, itemViewOptions)</span>{</span>
+  <span class="hljs-comment">// build the final list of options for the item view type</span>
+  <span class="hljs-keyword">var</span> options = _.extend({model: item}, itemViewOptions);
+  <span class="hljs-comment">// create the item view instance</span>
+  <span class="hljs-keyword">var</span> view = <span class="hljs-keyword">new</span> ItemViewType(options);
+  <span class="hljs-comment">// return it</span>
+  <span class="hljs-keyword">return</span> view;
+},
+</code></pre>
+<h3 id="collectionview-s-additemview-">CollectionView&#39;s <code>addItemView</code></h3>
+<p>The <code>addItemView</code> method is responsible for rendering the <code>itemViews</code> and adding them to the HTML for the <code>collectionView</code> instance. It is also responsible for triggering the events per <code>ItemView</code>. In most cases you should not override this method. However if you do want to short circut this method, it can be accomplished via the following.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  addItemView: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item, ItemView, index)</span>{</span>
+    <span class="hljs-keyword">if</span> (item.shouldBeShown()) {
+      Backbone.Marionette.CollectionView.prototype.addItemView.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+    }
+  }
+});
+</code></pre>
+<h2 id="collectionview-s-emptyview-">CollectionView&#39;s <code>emptyView</code></h2>
+<p>When a collection has no items, and you need to render a view other than
+the list of itemViews, you can specify an <code>emptyView</code> attribute on your
+collection view.</p>
+<pre><code class="lang-js">NoItemsView = Backbone.Marionette.ItemView.extend({
+  template: <span class="hljs-string">"#show-no-items-message-template"</span>
+});
+
+Backbone.Marionette.CollectionView.extend({
+  <span class="hljs-comment">// ...</span>
+
+  emptyView: NoItemsView
+});
+</code></pre>
+<h3 id="collectionview-s-getemptyview-">CollectionView&#39;s <code>getEmptyView</code></h3>
+<p>If you need the <code>emptyView</code>&#39;s type chosen dynamically, specify <code>getEmptyView</code>:</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  <span class="hljs-comment">// ...</span>
+
+  getEmptyView: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">// custom logic</span>
+    <span class="hljs-keyword">return</span> NoItemsView;
+  }
+</code></pre>
+<p>This will render the <code>emptyView</code> and display the message that needs to
+be displayed when there are no items.</p>
+<p>If you want to control when the empty view is rendered, you can override
+<code>isEmpty</code>:</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  isEmpty: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(collection)</span> {</span>
+    <span class="hljs-comment">// some logic to calculate if the view should be rendered as empty</span>
+    <span class="hljs-keyword">return</span> someBoolean;
+  }
+});
+</code></pre>
+<h2 id="callback-methods">Callback Methods</h2>
+<p>There are several callback methods that can be provided on a
+<code>CollectionView</code>. If they are found, they will be called by the
+view&#39;s base methods. These callback methods are intended to be
+handled within the view definition directly.</p>
+<h3 id="onbeforerender-callback">onBeforeRender callback</h3>
+<p>A <code>onBeforeRender</code> callback will be called just prior to rendering
+the collection view.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onBeforeRender: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// do stuff here</span>
+  }
+});
+</code></pre>
+<h3 id="onrender-callback">onRender callback</h3>
+<p>After the view has been rendered, a <code>onRender</code> method will be called.
+You can implement this in your view to provide custom code for dealing
+with the view&#39;s <code>el</code> after it has been rendered:</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onRender: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// do stuff here</span>
+  }
+});
+</code></pre>
+<h3 id="onbeforeclose-callback">onBeforeClose callback</h3>
+<p>This method is called just before closing the view.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onBeforeClose: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// do stuff here</span>
+  }
+});
+</code></pre>
+<h3 id="onclose-callback">onClose callback</h3>
+<p>This method is called just after closing the view.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onClose: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// do stuff here</span>
+  }
+});
+</code></pre>
+<h3 id="onbeforeitemadded-callback">onBeforeItemAdded callback</h3>
+<p>This callback function allows you to know when an item / item view
+instance is about to be added to the collection view. It provides access to
+the view instance for the item that was added.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onBeforeItemAdded: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(itemView)</span>{</span>
+    <span class="hljs-comment">// work with the itemView instance, here</span>
+  }
+});
+</code></pre>
+<h3 id="onafteritemadded-callback">onAfterItemAdded callback</h3>
+<p>This callback function allows you to know when an item / item view
+instance has been added to the collection view. It provides access to
+the view instance for the item that was added.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onAfterItemAdded: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(itemView)</span>{</span>
+    <span class="hljs-comment">// work with the itemView instance, here</span>
+  }
+});
+</code></pre>
+<h3 id="onitemremoved-callback">onItemRemoved callback</h3>
+<p>This callback function allows you to know when an item / item view
+instance has been deleted or removed from the
+collection.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onItemRemoved: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(itemView)</span>{</span>
+    <span class="hljs-comment">// work with the itemView instance, here</span>
+  }
+});
+</code></pre>
+<h2 id="collectionview-events">CollectionView Events</h2>
+<p>There are several events that will be triggered during the life
+of a collection view. Each of these events is called with the
+<a href="./marionette.functions.md">Marionette.triggerMethod</a> function,
+which calls a corresponding &quot;on{EventName}&quot; method on the
+view instance (see <a href="#callback-methods">above</a>).</p>
+<h3 id="-before-render-event">&quot;before:render&quot; event</h3>
+<p>Triggers just prior to the view being rendered. Also triggered as
+&quot;collection:before:render&quot; / <code>onCollectionBeforeRender</code>.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.CollectionView.extend({...});
+
+<span class="hljs-keyword">var</span> myView = <span class="hljs-keyword">new</span> MyView();
+
+myView.on(<span class="hljs-string">"before:render"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+  alert(<span class="hljs-string">"the collection view is about to be rendered"</span>);
+});
+
+myView.render();
+</code></pre>
+<h3 id="-render-event">&quot;render&quot; event</h3>
+<p>A &quot;collection:rendered&quot; / <code>onCollectionRendered</code> event will also be fired. This allows you to
+add more than one callback to execute after the view is rendered,
+and allows parent views and other parts of the application to
+know that the view was rendered.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.CollectionView.extend({...});
+
+<span class="hljs-keyword">var</span> myView = <span class="hljs-keyword">new</span> MyView();
+
+myView.on(<span class="hljs-string">"render"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+  alert(<span class="hljs-string">"the collection view was rendered!"</span>);
+});
+
+myView.on(<span class="hljs-string">"collection:rendered"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+  alert(<span class="hljs-string">"the collection view was rendered!"</span>);
+});
+
+myView.render();
+</code></pre>
+<h3 id="-before-close-event">&quot;before:close&quot; event</h3>
+<p>Triggered just before closing the view. A &quot;collection:before:close&quot; /
+<code>onCollectionBeforeClose</code> event will also be fired</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.CollectionView.extend({...});
+
+<span class="hljs-keyword">var</span> myView = <span class="hljs-keyword">new</span> MyView();
+
+myView.on(<span class="hljs-string">"collection:before:close"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+  alert(<span class="hljs-string">"the collection view is about to be closed"</span>);
+});
+
+myView.close();
+</code></pre>
+<h3 id="-closed-collection-closed-event">&quot;closed&quot; / &quot;collection:closed&quot; event</h3>
+<p>Triggered just after closing the view, both with corresponding
+method calls.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.CollectionView.extend({...});
+
+<span class="hljs-keyword">var</span> myView = <span class="hljs-keyword">new</span> MyView();
+
+myView.on(<span class="hljs-string">"collection:closed"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+  alert(<span class="hljs-string">"the collection view is now closed"</span>);
+});
+
+myView.close();
+</code></pre>
+<h3 id="-before-item-added-after-item-added-event">&quot;before:item:added&quot; / &quot;after:item:added&quot; event</h3>
+<p>The &quot;before:item:added&quot; event and corresponding <code>onBeforeItemAdded</code>
+method are triggered just after creating a new itemView instance for
+an item that was added to the collection, but before the
+view is rendered and added to the DOM.</p>
+<p>The &quot;after:item:added&quot; event and corresponding <code>onAfterItemAdded</code>
+method are triggered after rendering the view and adding it to the
+view&#39;s DOM element.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> MyCV = Marionette.CollectionView.extend({
+  <span class="hljs-comment">// ...</span>
+
+  onBeforeItemAdded: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// ...</span>
+  },
+
+  onAfterItemAdded: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// ...</span>
+  }
+});
+
+<span class="hljs-keyword">var</span> cv = <span class="hljs-keyword">new</span> MyCV({...});
+
+cv.on(<span class="hljs-string">"before:item:added"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(viewInstance)</span>{</span>
+  <span class="hljs-comment">// ...</span>
+});
+
+cv.on(<span class="hljs-string">"after:item:added"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(viewInstance)</span>{</span>
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h3 id="-item-removed-event">&quot;item:removed&quot; event</h3>
+<p>Triggered after an itemView instance has been closed and
+removed, when its item was deleted or removed from the
+collection.</p>
+<pre><code class="lang-js">cv.on(<span class="hljs-string">"item:removed"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(viewInstance)</span>{</span>
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h3 id="-itemview-event-bubbling-from-child-views">&quot;itemview:*&quot; event bubbling from child views</h3>
+<p>When an item view within a collection view triggers an
+event, that event will bubble up through the parent
+collection view with &quot;itemview:&quot; prepended to the event
+name.</p>
+<p>That is, if a child view triggers &quot;do:something&quot;, the
+parent collection view will then trigger &quot;itemview:do:something&quot;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// set up basic collection</span>
+<span class="hljs-keyword">var</span> myModel = <span class="hljs-keyword">new</span> MyModel();
+<span class="hljs-keyword">var</span> myCollection = <span class="hljs-keyword">new</span> MyCollection();
+myCollection.add(myModel);
+
+<span class="hljs-comment">// get the collection view in place</span>
+colView = <span class="hljs-keyword">new</span> CollectionView({
+  collection: myCollection
+});
+colView.render();
+
+<span class="hljs-comment">// bind to the collection view's events that were bubbled</span>
+<span class="hljs-comment">// from the child view</span>
+colView.on(<span class="hljs-string">"itemview:do:something"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(childView, msg)</span>{</span>
+  alert(<span class="hljs-string">"I said, '"</span> + msg + <span class="hljs-string">"'"</span>);
+});
+
+<span class="hljs-comment">// hack, to get the child view and trigger from it</span>
+<span class="hljs-keyword">var</span> childView = colView.children[myModel.cid];
+childView.trigger(<span class="hljs-string">"do:something"</span>, <span class="hljs-string">"do something!"</span>);
+</code></pre>
+<p>The result of this will be an alert box that says
+&quot;I said, &#39;do something!&#39;&quot;.</p>
+<p>Also note that you would not normally grab a reference to
+the child view the way this is showing. I&#39;m merely using
+that hack as a way to demonstrate the event bubbling.
+Normally, you would have your item view listening to DOM
+events or model change events, and then triggering an event
+of its own based on that.</p>
+<h2 id="collectionview-render">CollectionView render</h2>
+<p>The <code>render</code> method of the collection view is responsible for
+rendering the entire collection. It loops through each of the
+items in the collection and renders them individually as an
+<code>itemView</code>.</p>
+<pre><code class="lang-js">MyCollectionView = Backbone.Marionette.CollectionView.extend({...});
+
+<span class="hljs-keyword">new</span> MyCollectionView().render().done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+  <span class="hljs-comment">// all of the children are now rendered. do stuff here.</span>
+});
+</code></pre>
+<h2 id="collectionview-automatic-rendering">CollectionView: Automatic Rendering</h2>
+<p>The collection view binds to the &quot;add&quot;, &quot;remove&quot; and &quot;reset&quot; events of the
+collection that is specified.</p>
+<p>When the collection for the view is &quot;reset&quot;, the view will call <code>render</code> on
+itself and re-render the entire collection.</p>
+<p>When a model is added to the collection, the collection view will render that
+one model in to the collection of item views.</p>
+<p>When a model is removed from a collection (or destroyed / deleted), the collection
+view will close and remove that model&#39;s item view.</p>
+<h2 id="collectionview-re-render-collection">CollectionView: Re-render Collection</h2>
+<p>If you need to re-render the entire collection, you can call the
+<code>view.render</code> method. This method takes care of closing all of
+the child views that may have previously been opened.</p>
+<h2 id="collectionview-s-appendhtml">CollectionView&#39;s appendHtml</h2>
+<p>By default the collection view will append the HTML of each ItemView
+into the element buffer, and then call jQuery&#39;s <code>.append</code> once at the
+end to move the HTML into the collection view&#39;s <code>el</code>.</p>
+<p>You can override this by specifying an <code>appendHtml</code> method in your
+view definition. This method takes three parameters and has no return
+value.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+
+    <span class="hljs-comment">// The default implementation:</span>
+  appendHtml: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(collectionView, itemView, index)</span>{</span>
+    <span class="hljs-keyword">if</span> (collectionView.isBuffering) {
+      <span class="hljs-comment">// buffering happens on reset events and initial renders</span>
+      <span class="hljs-comment">// in order to reduce the number of inserts into the</span>
+      <span class="hljs-comment">// document, which are expensive.</span>
+      collectionView.elBuffer.appendChild(itemView.el);
+    }
+    <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// If we've already rendered the main collection, just</span>
+      <span class="hljs-comment">// append the new items directly into the element.</span>
+      collectionView.$el.append(itemView.el);
+    }
+  },
+
+  <span class="hljs-comment">// Called after all children have been appended into the elBuffer</span>
+  appendBuffer: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(collectionView, buffer)</span> {</span>
+    collectionView.$el.append(buffer);
+  },
+
+  <span class="hljs-comment">// called on initialize and after appendBuffer is called</span>
+  initRenderBuffer: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">this</span>.elBuffer = document.createDocumentFragment();
+  }
+
+});
+</code></pre>
+<p>The first parameter is the instance of the collection view that
+will receive the HTML from the second parameter, the current item
+view instance.</p>
+<p>The third parameter, <code>index</code>, is the index of the
+model that this itemView instance represents, in the collection
+that the model came from. This is useful for sorting a collection
+and displaying the sorted list in the correct order on the screen.</p>
+<p>Overrides of <code>appendHtml</code> that don&#39;t take into account the element
+buffer will work fine, but won&#39;t take advantage of the 60x performance
+increase the buffer provides.</p>
+<h2 id="collectionview-s-children">CollectionView&#39;s children</h2>
+<p>The CollectionView uses <a href="https://github.com/marionettejs/backbone.babysitter" target="_blank">Backbone.BabySitter</a>
+to store and manage its child views. This allows you to easily access
+the views within the collection view, iterate them, find them by
+a given indexer such as the view&#39;s model or collection, and more.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cv = <span class="hljs-keyword">new</span> Marionette.CollectionView({
+  collection: someCollection
+});
+
+cv.render();
+
+
+<span class="hljs-comment">// retrieve a view by model</span>
+<span class="hljs-keyword">var</span> v = cv.children.findByModel(someModel);
+
+<span class="hljs-comment">// iterate over all of the views and process them</span>
+cv.children.each(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(view)</span>{</span>
+
+  <span class="hljs-comment">// process the `view` here</span>
+
+});
+</code></pre>
+<p>For more information on the available features and functionality of
+the <code>.children</code>, see the <a href="https://github.com/marionettejs/backbone.babysitter" target="_blank">Backbone.BabySitter documentation</a>.</p>
+<h2 id="collectionview-close">CollectionView close</h2>
+<p>CollectionView implements a <code>close</code> method, which is called by the
+region managers automatically. As part of the implementation, the
+following are performed:</p>
+<ul>
+<li>unbind all <code>listenTo</code> events</li>
+<li>unbind all custom view events</li>
+<li>unbind all DOM events</li>
+<li>unbind all item views that were rendered</li>
+<li>remove <code>this.el</code> from the DOM</li>
+<li>call an <code>onClose</code> event on the view, if one is provided</li>
+</ul>
+<p>By providing an <code>onClose</code> event in your view definition, you can
+run custom code for your view that is fired after your view has been
+closed and cleaned up. This lets you handle any additional clean up
+code without having to override the <code>close</code> method.</p>
+<pre><code class="lang-js">Backbone.Marionette.CollectionView.extend({
+  onClose: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// custom cleanup or closing code, here</span>
+  }
+});
+</code></pre>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../Marionette/view/item_view.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../Marionette/view/composite_view.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../../gitbook/app.js"></script>
+        
+    </body>
+</html>

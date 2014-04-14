@@ -1,0 +1,741 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>View | Marionette.js</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="Book generated using GitBook">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../../Marionette/view/item_view.html" />
+        
+        
+        <link rel="prev" href="../../Marionette/configuration/template_cache.html" />
+        
+
+        <meta property="og:title" content="View | Marionette.js">
+        <meta property="og:site_name" content="Marionette.js">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="alchapone/backbone-marionette" data-level="7" data-basepath="../.." data-revision="1397492473730">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/alchapone/backbone-marionette" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/alchapone/backbone-marionette/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/backbone-marionette/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../../" >Marionette.js</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/edit/master/Marionette/view/view.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="Marionette/functions.html">
+                
+                <a href="../../Marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="Marionette/application.html">
+                
+                <a href="../../Marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="Marionette/application_module.html">
+                
+                <a href="../../Marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="Marionette/app_router.html">
+                
+                <a href="../../Marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4)</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="Marionette/controller.html">
+                
+                <a href="../../Marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="Marionette/configuration/configuration.html">
+                
+                <a href="../../Marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="Marionette/configuration/renderer.html">
+                            
+                            <a href="../../Marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1)</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="Marionette/configuration/template_cache.html">
+                            
+                            <a href="../../Marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2)</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="Marionette/view/view.html">
+                
+                <a href="../../Marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7)</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="Marionette/view/item_view.html">
+                            
+                            <a href="../../Marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1)</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="Marionette/view/collection_view.html">
+                            
+                            <a href="../../Marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2)</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="Marionette/view/composite_view.html">
+                            
+                            <a href="../../Marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3)</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="Marionette/view/layout.html">
+                            
+                            <a href="../../Marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4)</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="Marionette/regions/region.html">
+                
+                <a href="../../Marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="Marionette/regions/region_manager.html">
+                            
+                            <a href="../../Marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1)</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="Marionette/behavior/behavior.html">
+                
+                <a href="../../Marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9)</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="Marionette/behavior/behaviors.html">
+                            
+                            <a href="../../Marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1)</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 52.94117647058823%;min-width: 47.05882352941177%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../../Marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../../Marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../../Marionette/application_module.html" title="Application Module" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../../Marionette/app_router.html" title="App Router" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../../Marionette/controller.html" title="Controller" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../../Marionette/configuration/configuration.html" title="Configuration" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../../Marionette/configuration/renderer.html" title="Renderer" class="chapter done " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../../Marionette/configuration/template_cache.html" title="TemplateCache" class="chapter done " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../../Marionette/view/view.html" title="View" class="chapter done new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../../Marionette/view/item_view.html" title="Item View" class="chapter  " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../../Marionette/view/collection_view.html" title="Collection View" class="chapter  " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../../Marionette/view/composite_view.html" title="Composite View" class="chapter  " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../../Marionette/view/layout.html" title="Layout" class="chapter  " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../../Marionette/regions/region.html" title="Regions" class="chapter  new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../../Marionette/regions/region_manager.html" title="Region Manager" class="chapter  " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../../Marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../../Marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_17">
+                    
+                        <h1 id="marionette-view">Marionette.View</h1>
+<p>Marionette has a base <code>Marionette.View</code> type that other views extend from.
+This base view provides some common and core functionality for
+other views to take advantage of.</p>
+<p><strong>Note:</strong> The <code>Marionette.View</code> type is not intended to be
+used directly. It exists as a base view for other view types
+to be extended from, and to provide a common location for
+behaviors that are shared across all views.</p>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#binding-to-view-events">Binding To View Events</a></li>
+<li><a href="#view-onshow">View onShow</a></li>
+<li><a href="#view-close">View close</a></li>
+<li><a href="#view-onbeforeclose">View onBeforeClose</a></li>
+<li><a href="#view-domrefresh--ondomrefresh-event">View &quot;dom:refresh&quot; / onDomRefresh event</a></li>
+<li><a href="#viewtriggers">View.triggers</a></li>
+<li><a href="#viewevents">View.events</a></li>
+<li><a href="#viewmodelevents-and-viewcollectionevents">View.modelEvents and View.collectionEvents</a></li>
+<li><a href="#viewserializedata">View.serializeData</a></li>
+<li><a href="#viewbinduielements">View.bindUIElements</a></li>
+<li><a href="#viewtemplatehelpers">View.templateHelpers</a><ul>
+<li><a href="#basic-example">Basic Example</a></li>
+<li><a href="#accessing-data-within-the-helpers">Accessing Data Within The Helpers</a></li>
+<li><a href="#object-or-function-as-templatehelpers">Object Or Function As <code>templateHelpers</code></a></li>
+</ul>
+</li>
+<li><a href="#change-which-template-is-rendered-for-a-view">Change Which Template Is Rendered For A View</a></li>
+</ul>
+<h2 id="binding-to-view-events">Binding To View Events</h2>
+<p>Marionette.View extends <code>Backbone.View</code>. It is recommended that you use
+the <code>listenTo</code> method to bind model, collection, or other events from Backbone
+and Marionette objects.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.ItemView.extend({
+  initialize: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-keyword">this</span>.listenTo(<span class="hljs-keyword">this</span>.model, <span class="hljs-string">"change:foo"</span>, <span class="hljs-keyword">this</span>.modelChanged);
+    <span class="hljs-keyword">this</span>.listenTo(<span class="hljs-keyword">this</span>.collection, <span class="hljs-string">"add"</span>, <span class="hljs-keyword">this</span>.modelAdded);
+  },
+
+  modelChanged: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(model, value)</span>{</span>
+  },
+
+  modelAdded: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(model)</span>{</span>
+  }
+});
+</code></pre>
+<p>The context (<code>this</code>) will automatically be set to the view. You can
+optionally set the context by using <code>_.bind</code>.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Force the context of the "reconcileCollection" callback method to be the collection</span>
+<span class="hljs-comment">// itself, for this event handler only (does not affect any other use of the</span>
+<span class="hljs-comment">// "reconcileCollection" method)</span>
+<span class="hljs-keyword">this</span>.listenTo(<span class="hljs-keyword">this</span>.collection, <span class="hljs-string">"add"</span>, _.bind(<span class="hljs-keyword">this</span>.reconcileCollection, <span class="hljs-keyword">this</span>.collection));
+</code></pre>
+<h2 id="view-onshow">View onShow</h2>
+<ul>
+<li>&quot;show&quot; / <code>onShow</code> - Called on the view instance when the view has been rendered and displayed.</li>
+</ul>
+<p>This event can be used to react to when a view has been shown via a <a href="marionette.region.md">region</a>.
+All <code>views</code> that inherit from the base <code>Marionette.View</code> class have this functionality. <code>ItemView</code>, &#39;CollectionView&#39;, &#39;CompositeView&#39;, &#39;Layout&#39;</p>
+<pre><code class="lang-js">Backbone.Marionette.ItemView.extend({
+  onShow: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// react to when a view has been shown</span>
+  }
+});
+</code></pre>
+<p>A common use case for the <code>onShow</code> method is to use it to add children views.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> LayoutView = Backbone.Marionette.Layout.extend({
+   regions: {
+     Header: <span class="hljs-string">'header'</span>,
+     Section: <span class="hljs-string">'section'</span>
+   },
+   onShow: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      <span class="hljs-keyword">this</span>.Header.show(<span class="hljs-keyword">new</span> Header());
+      <span class="hljs-keyword">this</span>.Section.show(<span class="hljs-keyword">new</span> Section());
+   }
+});
+</code></pre>
+<h2 id="view-close">View close</h2>
+<p>View implements a <code>close</code> method, which is called by the region
+managers automatically. As part of the implementation, the following
+are performed:</p>
+<ul>
+<li>call an <code>onBeforeClose</code> event on the view, if one is provided</li>
+<li>call an <code>onClose</code> event on the view, if one is provided</li>
+<li>unbind all custom view events</li>
+<li>unbind all DOM events</li>
+<li>remove <code>this.el</code> from the DOM</li>
+<li>unbind all <code>listenTo</code> events</li>
+</ul>
+<p>By providing an <code>onClose</code> method in your view definition, you can
+run custom code for your view that is fired after your view has been
+closed and cleaned up. The <code>onClose</code> method will be passed any arguments
+that <code>close</code> was invoked with. This lets you handle any additional clean
+up code without having to override the <code>close</code> method.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.ItemView.extend({
+  onClose: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(arg1, arg2)</span>{</span>
+    <span class="hljs-comment">// custom cleanup or closing code, here</span>
+  }
+});
+
+<span class="hljs-keyword">var</span> v = <span class="hljs-keyword">new</span> MyView();
+v.close(arg1, arg2);
+</code></pre>
+<h2 id="view-onbeforeclose">View onBeforeClose</h2>
+<p>When closing a view, an <code>onBeforeClose</code> method will be called, if it
+has been provided. It will be passed any arguments that <code>close</code> was
+invoked with. If this method returns <code>false</code>, the view will not
+be closed. Any other return value (including null or undefined) will
+allow the view to be closed.</p>
+<pre><code class="lang-js">MyView = Marionette.View.extend({
+
+  onBeforeClose: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// prevent the view from being closed</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+  }
+
+});
+
+<span class="hljs-keyword">var</span> v = <span class="hljs-keyword">new</span> MyView();
+
+v.close(); <span class="hljs-comment">// view will remain open</span>
+</code></pre>
+<h3 id="view-dom-refresh-ondomrefresh-event">View &quot;dom:refresh&quot; / onDomRefresh event</h3>
+<p>Triggered after the view has been rendered, has been shown in the DOM via a Marionette.Region, and has been
+re-rendered.</p>
+<p>This event / callback is useful for
+<a href="http://lostechies.com/derickbailey/2012/02/20/using-jquery-plugins-and-ui-controls-with-backbone/" target="_blank">DOM-dependent UI plugins</a> such as
+<a href="http://jqueryui.com/" target="_blank">jQueryUI</a> or <a href="http://kendoui.com" target="_blank">KendoUI</a>.</p>
+<pre><code class="lang-js">Backbone.Marionette.ItemView.extend({
+  onDomRefresh: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// manipulate the `el` here. it's already</span>
+    <span class="hljs-comment">// been rendered, and is full of the view's</span>
+    <span class="hljs-comment">// HTML, ready to go.</span>
+  }
+});
+</code></pre>
+<p>For more information about integration Marionette w/ KendoUI (also applicable to jQueryUI and other UI
+widget suites), see <a href="http://www.kendoui.com/blogs/teamblog/posts/12-11-26/backbone_and_kendo_ui_a_beautiful_combination.aspx" target="_blank">this blog post on KendoUI + Backbone</a>.</p>
+<h2 id="view-events">View.events</h2>
+<p>Since Views extend from backbone`s view class, you gain the benefits of the <a href="http://backbonejs.org/#View-delegateEvents" target="_blank">events hash</a>.</p>
+<p>Some preprocessing sugar is added on top to add the ability to cross utilize the <code>ui</code> hash.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.ItemView.extend({
+  <span class="hljs-comment">// ...</span>
+
+  ui: {
+    <span class="hljs-string">"cat"</span>: <span class="hljs-string">".dog"</span>
+  },
+
+  events: {
+    <span class="hljs-string">"click @ui.cat"</span>: <span class="hljs-string">"bark"</span> <span class="hljs-comment">//is the same as "click .dog":</span>
+  }
+});
+</code></pre>
+<h2 id="view-triggers">View.triggers</h2>
+<p>Views can define a set of <code>triggers</code> as a hash, which will
+convert a DOM event into a <code>view.triggerMethod</code> call.</p>
+<p>The left side of the hash is a standard Backbone.View DOM
+event configuration, while the right side of the hash is the
+view event that you want to trigger from the view.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.ItemView.extend({
+  <span class="hljs-comment">// ...</span>
+
+  triggers: {
+    <span class="hljs-string">"click .do-something"</span>: <span class="hljs-string">"something:do:it"</span>
+  }
+});
+
+view = <span class="hljs-keyword">new</span> MyView();
+view.render();
+
+view.on(<span class="hljs-string">"something:do:it"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(args)</span>{</span>
+  alert(<span class="hljs-string">"I DID IT!"</span>);
+});
+
+<span class="hljs-comment">// "click" the 'do-something' DOM element to</span>
+<span class="hljs-comment">// demonstrate the DOM event conversion</span>
+view.$(<span class="hljs-string">".do-something"</span>).trigger(<span class="hljs-string">"click"</span>);
+</code></pre>
+<p>The result of this is an alert box that says, &quot;I DID IT!&quot;</p>
+<p>By default all triggers are stopped with <code>preventDefault</code> and <code>stopPropagation</code> methods. But you can manually configure the triggers using hash instead of event name. Example below triggers an event and prevents default browser behaviour using <code>preventDefault</code> method.</p>
+<pre><code class="lang-js">Backbone.Marionette.CompositeView.extend({
+  triggers: {
+    <span class="hljs-string">"click .do-something"</span>: {
+      event: <span class="hljs-string">"something:do:it"</span>,
+      preventDefault: <span class="hljs-literal">true</span>, <span class="hljs-comment">// this param is optional and will default to true</span>
+      stopPropagation: <span class="hljs-literal">false</span>
+    }
+  }
+});
+</code></pre>
+<p>You can also specify the <code>triggers</code> as a function that
+returns a hash of trigger configurations</p>
+<pre><code class="lang-js">Backbone.Marionette.CompositeView.extend({
+  triggers: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-string">"click .that-thing"</span>: <span class="hljs-string">"that:i:sent:you"</span>
+    };
+  }
+});
+</code></pre>
+<p>Trigger keys can be configured to cross utilize the <code>ui</code> hash.</p>
+<pre><code class="lang-js">Backbone.Marionette.ItemView.extend({
+  ui: {
+     <span class="hljs-string">'monkey'</span>: <span class="hljs-string">'.guybrush'</span>
+  },
+  triggers: {
+    <span class="hljs-string">'click @ui.monkey'</span>: <span class="hljs-string">'see:LeChuck'</span> <span class="hljs-comment">// equivalent of "click .guybrush"</span>
+  }
+});
+</code></pre>
+<p>Triggers work with all View types that extend from the base
+Marionette.View.</p>
+<h3 id="trigger-handler-arguments">Trigger Handler Arguments</h3>
+<p>A <code>trigger</code> event handler will receive a single argument that
+includes the following:</p>
+<ul>
+<li>view</li>
+<li>model</li>
+<li>collection</li>
+</ul>
+<p>These properties match the <code>view</code>, <code>model</code>, and <code>collection</code> properties of the view that triggered the event.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.ItemView.extend({
+  <span class="hljs-comment">// ...</span>
+
+  triggers: {
+    <span class="hljs-string">"click .do-something"</span>: <span class="hljs-string">"some:event"</span>
+  }
+});
+
+view = <span class="hljs-keyword">new</span> MyView();
+
+view.on(<span class="hljs-string">"some:event"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(args)</span>{</span>
+  args.view; <span class="hljs-comment">// =&gt; the view instance that triggered the event</span>
+  args.model; <span class="hljs-comment">// =&gt; the view.model, if one was set on the view</span>
+  args.collection; <span class="hljs-comment">// =&gt; the view.collection, if one was set on the view</span>
+});
+</code></pre>
+<p>Having access to these allows more flexibility in handling events from
+multiple views. For example, a tab control or expand/collapse widget such
+as a panel bar could trigger the same event from many different views
+and be handled with a single function.</p>
+<h2 id="view-modelevents-and-view-collectionevents">View.modelEvents and View.collectionEvents</h2>
+<p>Similar to the <code>events</code> hash, views can specify a configuration
+hash for collections and models. The left side is the event on
+the model or collection, and the right side is the name of the
+method on the view.</p>
+<pre><code class="lang-js">Backbone.Marionette.CompositeView.extend({
+
+  modelEvents: {
+    <span class="hljs-string">"change:name"</span>: <span class="hljs-string">"nameChanged"</span> <span class="hljs-comment">// equivalent to view.listenTo(view.model, "change:name", view.nameChanged, view)</span>
+  },
+
+  collectionEvents: {
+    <span class="hljs-string">"add"</span>: <span class="hljs-string">"itemAdded"</span> <span class="hljs-comment">// equivalent to view.listenTo(view.collection, "add", view.itemAdded, view)</span>
+  },
+
+  <span class="hljs-comment">// ... event handler methods</span>
+  nameChanged: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> <span class="hljs-comment">/* ... */</span> },
+  itemAdded: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> <span class="hljs-comment">/* ... */</span> },
+
+})
+</code></pre>
+<p>These will use the memory safe <code>listenTo</code>, and will set the context
+(the value of <code>this</code>) in the handler to be the view. Events are
+bound at the time of instantiation, and an exception will be thrown
+if the handlers on the view do not exist.</p>
+<p>The <code>modelEvents</code> and <code>collectionEvents</code> will be bound and
+unbound with the Backbone.View <code>delegateEvents</code> and <code>undelegateEvents</code>
+method calls. This allows the view to be re-used and have
+the model and collection events re-bound.</p>
+<h3 id="multiple-callbacks">Multiple Callbacks</h3>
+<p>Multiple callback functions can be specified by separating them with a
+space.</p>
+<pre><code class="lang-js">Backbone.Marionette.CompositeView.extend({
+
+  modelEvents: {
+    <span class="hljs-string">"change:name"</span>: <span class="hljs-string">"nameChanged thatThing"</span>
+  },
+
+  nameChanged: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> },
+
+  thatThing: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> },
+});
+</code></pre>
+<p>This works in both <code>modelEvents</code> and <code>collectionEvents</code>.</p>
+<h3 id="callbacks-as-function">Callbacks As Function</h3>
+<p>A single function can be declared directly in-line instead of specifying a
+callback via a string method name.</p>
+<pre><code class="lang-js">Backbone.Marionette.CompositeView.extend({
+
+  modelEvents: {
+    <span class="hljs-string">"change:name"</span>: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+      <span class="hljs-comment">// handle the name changed event here</span>
+    }
+  }
+
+});
+</code></pre>
+<p>This works for both <code>modelEvents</code> and <code>collectionEvents</code>.</p>
+<h3 id="event-configuration-as-function">Event Configuration As Function</h3>
+<p>A function can be used to declare the event configuration as long as
+that function returns a hash that fits the above configuration options.</p>
+<pre><code class="lang-js">Backbone.Marionette.CompositeView.extend({
+
+  modelEvents: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-keyword">return</span> { <span class="hljs-string">"change:name"</span>: <span class="hljs-string">"someFunc"</span> };
+  }
+
+});
+</code></pre>
+<p>This works for both <code>modelEvents</code> and <code>collectionEvents</code>.</p>
+<h2 id="view-serializedata">View.serializeData</h2>
+<p>The <code>serializeData</code> method will serialize a view&#39;s model or
+collection - with precedence given to collections. That is,
+if you have both a collection and a model in a view, calling
+the <code>serializeData</code> method will return the serialized
+collection.</p>
+<h2 id="view-binduielements">View.bindUIElements</h2>
+<p>In several cases you need to access ui elements inside the view
+to retrieve their data or manipulate them. For example you have a
+certain div element you need to show/hide based on some state,
+or other ui element that you wish to set a css class to it.
+Instead of having jQuery selectors hanging around in the view&#39;s code
+you can define a <code>ui</code> hash that contains a mapping between the
+ui element&#39;s name and its jQuery selector. Afterwards you can simply
+access it via <code>this.ui.elementName</code>.
+See ItemView documentation for examples.</p>
+<p>This functionality is provided via the <code>bindUIElements</code> method.
+Since View doesn&#39;t implement the render method, then if you directly extend
+from View you will need to invoke this method from your render method.
+In ItemView and CompositeView this is already taken care of.</p>
+<h2 id="view-templatehelpers">View.templateHelpers</h2>
+<p>There are times when a view&#39;s template needs to have some
+logic in it and the view engine itself will not provide an
+easy way to accomplish this. For example, Underscore templates
+do not provide a helper method mechanism while Handlebars
+templates do.</p>
+<p>A <code>templateHelpers</code> attribute can be applied to any View object that
+renders a template. When this attribute is present its contents
+will be mixed in to the data object that comes back from the
+<code>serializeData</code> method. This will allow you to create helper methods
+that can be called from within your templates.</p>
+<h3 id="basic-example">Basic Example</h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"my-template"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/html"</span>&gt;</span><span class="javascript">
+  I think that &lt;%= showMessage() %&gt;
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js">MyView = Backbone.Marionette.ItemView.extend({
+  template: <span class="hljs-string">"#my-template"</span>,
+
+  templateHelpers: {
+    showMessage: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-string">" is the coolest!"</span>
+    }
+  }
+
+});
+
+model = <span class="hljs-keyword">new</span> Backbone.Model({name: <span class="hljs-string">"Backbone.Marionette"</span>});
+view = <span class="hljs-keyword">new</span> MyView({
+  model: model
+});
+
+view.render(); <span class="hljs-comment">//=&gt; "I think that Backbone.Marionette is the coolest!";</span>
+</code></pre>
+<p>The <code>templateHelpers</code> can also be provided as a constructor parameter
+for any Marionette view type that supports the helpers.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> MyView = Marionette.ItemView.extend({
+  <span class="hljs-comment">// ...</span>
+});
+
+<span class="hljs-keyword">new</span> MyView({
+  templateHelpers: {
+    doFoo: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> <span class="hljs-comment">/* ... */</span> }
+  }
+});
+</code></pre>
+<h3 id="accessing-data-within-the-helpers">Accessing Data Within The Helpers</h3>
+<p>In order to access data from within the helper methods, you
+need to prefix the data you need with <code>this</code>. Doing that will
+give you all of the methods and attributes of the serialized
+data object, including the other helper methods.</p>
+<pre><code class="lang-js">templateHelpers: {
+  something: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Do stuff with "</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">" because it's awesome."</span>;
+  }
+}
+</code></pre>
+<h3 id="object-or-function-as-templatehelpers-">Object Or Function As <code>templateHelpers</code></h3>
+<p>You can specify an object literal (as shown above), a reference
+to an object literal, or a function as the <code>templateHelpers</code>.</p>
+<p>If you specify a function, the function will be invoked
+with the current view instance as the context of the
+function. The function must return an object that can be
+mixed in to the data for the view.</p>
+<pre><code class="lang-js">Backbone.Marionette.ItemView.extend({
+  templateHelpers: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-keyword">return</span> {
+      foo: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> <span class="hljs-comment">/* ... */</span> }
+    }
+  }
+});
+</code></pre>
+<h2 id="change-which-template-is-rendered-for-a-view">Change Which Template Is Rendered For A View</h2>
+<p>There may be some cases where you need to change the template that is
+used for a view, based on some simple logic such as the value of a
+specific attribute in the view&#39;s model. To do this, you can provide
+a <code>getTemplate</code> function on your views and use this to return the
+template that you need.</p>
+<pre><code class="lang-js">MyView = Backbone.Marionette.ItemView.extend({
+  getTemplate: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"foo"</span>)){
+      <span class="hljs-keyword">return</span> <span class="hljs-string">"#some-template"</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-string">"#a-different-template"</span>;
+    }
+  }
+});
+</code></pre>
+<p>This applies to all view types.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../Marionette/configuration/template_cache.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../Marionette/view/item_view.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../../gitbook/app.js"></script>
+        
+    </body>
+</html>

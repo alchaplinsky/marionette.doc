@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Renderer | Marionette.js</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="Book generated using GitBook">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../../Marionette/configuration/template_cache.html" />
+        
+        
+        <link rel="prev" href="../../Marionette/configuration/configuration.html" />
+        
+
+        <meta property="og:title" content="Renderer | Marionette.js">
+        <meta property="og:site_name" content="Marionette.js">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="alchapone/backbone-marionette" data-level="6.1" data-basepath="../.." data-revision="1397492473730">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/alchapone/backbone-marionette" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/alchapone/backbone-marionette/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/backbone-marionette/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../../" >Marionette.js</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/edit/master/Marionette/configuration/renderer.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="Marionette/functions.html">
+                
+                <a href="../../Marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="Marionette/application.html">
+                
+                <a href="../../Marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="Marionette/application_module.html">
+                
+                <a href="../../Marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="Marionette/app_router.html">
+                
+                <a href="../../Marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4)</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="Marionette/controller.html">
+                
+                <a href="../../Marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="Marionette/configuration/configuration.html">
+                
+                <a href="../../Marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="Marionette/configuration/renderer.html">
+                            
+                            <a href="../../Marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1)</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="Marionette/configuration/template_cache.html">
+                            
+                            <a href="../../Marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2)</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="Marionette/view/view.html">
+                
+                <a href="../../Marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7)</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="Marionette/view/item_view.html">
+                            
+                            <a href="../../Marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1)</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="Marionette/view/collection_view.html">
+                            
+                            <a href="../../Marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2)</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="Marionette/view/composite_view.html">
+                            
+                            <a href="../../Marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3)</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="Marionette/view/layout.html">
+                            
+                            <a href="../../Marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4)</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="Marionette/regions/region.html">
+                
+                <a href="../../Marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="Marionette/regions/region_manager.html">
+                            
+                            <a href="../../Marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1)</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="Marionette/behavior/behavior.html">
+                
+                <a href="../../Marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9)</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="Marionette/behavior/behaviors.html">
+                            
+                            <a href="../../Marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1)</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 41.1764705882353%;min-width: 35.294117647058826%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../../Marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../../Marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../../Marionette/application_module.html" title="Application Module" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../../Marionette/app_router.html" title="App Router" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../../Marionette/controller.html" title="Controller" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../../Marionette/configuration/configuration.html" title="Configuration" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../../Marionette/configuration/renderer.html" title="Renderer" class="chapter done " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../../Marionette/configuration/template_cache.html" title="TemplateCache" class="chapter  " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../../Marionette/view/view.html" title="View" class="chapter  new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../../Marionette/view/item_view.html" title="Item View" class="chapter  " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../../Marionette/view/collection_view.html" title="Collection View" class="chapter  " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../../Marionette/view/composite_view.html" title="Composite View" class="chapter  " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../../Marionette/view/layout.html" title="Layout" class="chapter  " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../../Marionette/regions/region.html" title="Regions" class="chapter  new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../../Marionette/regions/region_manager.html" title="Region Manager" class="chapter  " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../../Marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../../Marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_7">
+                    
+                        <h1 id="marionette-renderer">Marionette.Renderer</h1>
+<p>The <code>Renderer</code> object was extracted from the <code>ItemView</code> rendering
+process, in order to create a consistent and re-usable method of
+rendering a template with or without data.</p>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#pre-compiled-templates">Pre-compiled Templates</a></li>
+<li><a href="#custom-template-selection-and-rendering">Custom Template Selection And Rendering</a></li>
+<li><a href="#using-pre-compiled-templates">Using Pre-compiled Templates</a></li>
+</ul>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>The basic usage of the <code>Renderer</code> is to call the <code>render</code> method.
+This method returns a string containing the result of applying the
+template using the <code>data</code> object as the context.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> template = <span class="hljs-string">"#some-template"</span>;
+<span class="hljs-keyword">var</span> data = {foo: <span class="hljs-string">"bar"</span>};
+<span class="hljs-keyword">var</span> html = Backbone.Marionette.Renderer.render(template, data);
+
+<span class="hljs-comment">// do something with the HTML here</span>
+</code></pre>
+<p>If you pass a <code>template</code> that coerces to a falsey value, the
+<code>render</code> method will throw an exception stating that there was no
+template provided.</p>
+<h2 id="pre-compiled-templates">Pre-compiled Templates</h2>
+<p>If the <code>template</code> parameter of the <code>render</code> function is itself a function,
+the renderer treats this as a pre-compiled template and does not try to
+compile it again. This allows any view that supports a <code>template</code> parameter
+to specify a pre-compiled template function as the <code>template</code> setting.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> myTemplate = _.template(<span class="hljs-string">"&lt;div&gt;foo&lt;/div&gt;"</span>);
+Backbone.Marionette.ItemView.extend({
+  template: myTemplate
+});
+</code></pre>
+<p>The template function does not have to be any specific template engine. It
+only needs to be a function that returns valid HTML as a string from the
+<code>data</code> parameter passed to the function.</p>
+<h2 id="custom-template-selection-and-rendering">Custom Template Selection And Rendering</h2>
+<p>By default, the renderer will take a jQuery selector object as
+the first parameter, and a JSON data object as the optional
+second parameter. It then uses the <code>TemplateCache</code> to load the
+template by the specified selector, and renders the template with
+the data provided (if any) using Underscore.js templates.</p>
+<p>If you wish to override the way the template is loaded, see
+the <code>TemplateCache</code> object.</p>
+<p>If you wish to override the template engine used, change the
+<code>render</code> method to work however you want:</p>
+<pre><code class="lang-js">Backbone.Marionette.Renderer.render = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(template, data)</span>{</span>
+  <span class="hljs-keyword">return</span> $(template).tmpl(data);
+});
+</code></pre>
+<p>This implementation will replace the default Underscore.js
+rendering with jQuery templates rendering.</p>
+<p>If you override the <code>render</code> method and wish to use the
+<code>TemplateCache</code> mechanism, remember to include the code necessary to
+fetch the template from the cache in your <code>render</code> method:</p>
+<pre><code class="lang-js">Backbone.Marionette.Renderer.render = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(template, data)</span>{</span>
+  <span class="hljs-keyword">var</span> template = Marionette.TemplateCache.get(template);
+  <span class="hljs-comment">// Do something with the template here</span>
+};
+</code></pre>
+<h2 id="using-pre-compiled-templates">Using Pre-compiled Templates</h2>
+<p>You can easily replace the standard template rendering functionality
+with a pre-compiled template, such as those provided by the JST or TPL
+plugins for AMD/RequireJS.</p>
+<p>To do this, just override the <code>render</code> method to return your executed
+template with the data.</p>
+<pre><code class="lang-js">Backbone.Marionette.Renderer.render = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(template, data)</span>{</span>
+  <span class="hljs-keyword">return</span> template(data);
+};
+</code></pre>
+<p>Then you can specify the pre-compiled template function as your view&#39;s
+<code>template</code> attribute:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> myPrecompiledTemplate = _.template(<span class="hljs-string">"&lt;div&gt;some template&lt;/div&gt;"</span>);
+
+Backbone.Marionette.ItemView.extend({
+  template: myPrecompiledTemplate
+});
+</code></pre>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../Marionette/configuration/configuration.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../Marionette/configuration/template_cache.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../../gitbook/app.js"></script>
+        
+    </body>
+</html>

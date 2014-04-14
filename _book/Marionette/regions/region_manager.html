@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Region Manager | Marionette.js</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="Book generated using GitBook">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../../Marionette/behavior/behavior.html" />
+        
+        
+        <link rel="prev" href="../../Marionette/regions/region.html" />
+        
+
+        <meta property="og:title" content="Region Manager | Marionette.js">
+        <meta property="og:site_name" content="Marionette.js">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="alchapone/backbone-marionette" data-level="8.1" data-basepath="../.." data-revision="1397492473730">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/alchapone/backbone-marionette" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/alchapone/backbone-marionette/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/backbone-marionette/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../../" >Marionette.js</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/edit/master/Marionette/regions/region_manager.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="Marionette/functions.html">
+                
+                <a href="../../Marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="Marionette/application.html">
+                
+                <a href="../../Marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="Marionette/application_module.html">
+                
+                <a href="../../Marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="Marionette/app_router.html">
+                
+                <a href="../../Marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4)</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="Marionette/controller.html">
+                
+                <a href="../../Marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="Marionette/configuration/configuration.html">
+                
+                <a href="../../Marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="Marionette/configuration/renderer.html">
+                            
+                            <a href="../../Marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1)</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="Marionette/configuration/template_cache.html">
+                            
+                            <a href="../../Marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2)</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="Marionette/view/view.html">
+                
+                <a href="../../Marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7)</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="Marionette/view/item_view.html">
+                            
+                            <a href="../../Marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1)</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="Marionette/view/collection_view.html">
+                            
+                            <a href="../../Marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2)</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="Marionette/view/composite_view.html">
+                            
+                            <a href="../../Marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3)</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="Marionette/view/layout.html">
+                            
+                            <a href="../../Marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4)</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="Marionette/regions/region.html">
+                
+                <a href="../../Marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="Marionette/regions/region_manager.html">
+                            
+                            <a href="../../Marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1)</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="Marionette/behavior/behavior.html">
+                
+                <a href="../../Marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9)</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="Marionette/behavior/behaviors.html">
+                            
+                            <a href="../../Marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1)</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 88.23529411764706%;min-width: 82.3529411764706%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../../Marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../../Marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../../Marionette/application_module.html" title="Application Module" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../../Marionette/app_router.html" title="App Router" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../../Marionette/controller.html" title="Controller" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../../Marionette/configuration/configuration.html" title="Configuration" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../../Marionette/configuration/renderer.html" title="Renderer" class="chapter done " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../../Marionette/configuration/template_cache.html" title="TemplateCache" class="chapter done " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../../Marionette/view/view.html" title="View" class="chapter done new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../../Marionette/view/item_view.html" title="Item View" class="chapter done " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../../Marionette/view/collection_view.html" title="Collection View" class="chapter done " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../../Marionette/view/composite_view.html" title="Composite View" class="chapter done " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../../Marionette/view/layout.html" title="Layout" class="chapter done " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../../Marionette/regions/region.html" title="Regions" class="chapter done new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../../Marionette/regions/region_manager.html" title="Region Manager" class="chapter done " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../../Marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../../Marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_12">
+                    
+                        <h1 id="marionette-regionmanager">Marionette.RegionManager</h1>
+<p>Region managers provide a consistent way to manage
+a number of Marionette.Region objects within an
+application. The RegionManager is intended to be
+used by other objects, to facilitate the addition,
+storage, retrieval, and removal of regions from
+that object. For examples of how it can be used,
+see the <a href="./marionette.application.md">Marionette.Application</a> and <a href="./marionette.layout.md">Marionette.Layout</a>
+objects.</p>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#basic-use">Basic Use</a></li>
+<li><a href="#regionmanageraddregion">RegionManager.addRegion</a></li>
+<li><a href="#regionmanageraddregions">RegionManager.addRegions</a><ul>
+<li><a href="#addregions-default-options">addRegions default options</a></li>
+</ul>
+</li>
+<li><a href="#regionmanagerget">RegionManager.get</a></li>
+<li><a href="#regionmanagerremoveregion">RegionManager.removeRegion</a></li>
+<li><a href="#regionmanagerremoveregions">RegionManager.removeRegions</a></li>
+<li><a href="#regionmanagercloseregions">RegionManager.closeRegions</a></li>
+<li><a href="#regionmanagerclose">RegionManager.close</a></li>
+<li><a href="#regionmanager-events">RegionManager Events</a><ul>
+<li><a href="#regionadd-event">region:add event</a></li>
+<li><a href="#regionremove-event">region:remove event</a></li>
+</ul>
+</li>
+<li><a href="#regionmanager-iterators">RegionManager Iterators</a></li>
+</ul>
+<h2 id="basic-use">Basic Use</h2>
+<p>RegionManagers can be instantiated directly, and can
+have regions added and removed via several methods:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+
+<span class="hljs-keyword">var</span> region = rm.addRegion(<span class="hljs-string">"foo"</span>, <span class="hljs-string">"#bar"</span>);
+
+<span class="hljs-keyword">var</span> regions = rm.addRegions({
+  baz: <span class="hljs-string">"#baz"</span>,
+  quux: <span class="hljs-string">"ul.quux"</span>
+});
+
+regions.baz.show(myView);
+
+rm.removeRegion(<span class="hljs-string">"foo"</span>);
+</code></pre>
+<h2 id="regionmanager-addregion">RegionManager.addRegion</h2>
+<p>Regions can be added individually using the <code>addRegion</code>
+method. This method takes two parameters: the region name
+and the region definition.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+
+<span class="hljs-keyword">var</span> region = rm.addRegion(<span class="hljs-string">"foo"</span>, <span class="hljs-string">"#bar"</span>);
+</code></pre>
+<p>In this example, a region named &quot;foo&quot; will be added
+to the RegionManager instance. It is defined as a
+jQuery selector that will search for the <code>#bar</code>
+element in the DOM.</p>
+<p>There are a lot of other ways to define a region,
+including object literals with various options, and
+instances of Region objects. For more information
+on this, see the Region documentation.</p>
+<h2 id="regionmanager-addregions">RegionManager.addRegions</h2>
+<p>Regions can also be added en-masse through the use
+of the <code>addRegions</code> method. To use this method,
+pass an object literal that contains the names of
+the regions as keys, and the region definitions as
+values.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+
+<span class="hljs-keyword">var</span> regions = rm.addRegions({
+  foo: <span class="hljs-string">"#bar"</span>,
+  bar: {
+    selector: <span class="hljs-string">"#quux"</span>,
+    regionType: MyRegionType
+  }
+});
+
+regions.foo; <span class="hljs-comment">//=&gt; the "foo" region instance</span>
+regions.bar; <span class="hljs-comment">//=&gt; the "bar" region instance</span>
+</code></pre>
+<p>This method returns an object literal that contains
+all of the named region instances.</p>
+<h3 id="addregions-default-options">addRegions default options</h3>
+<p>When adding multiple regions it may be useful to
+provide a set of defaults that get applied to all
+of the regions being added. This can be done through
+the use of a <code>defaults</code> parameter. Specify this
+parameter as an object literal with <code>key: value</code>
+pairs that will be applied to every region added.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+
+<span class="hljs-keyword">var</span> defaults = {
+  regionType: MyRegionType
+};
+
+<span class="hljs-keyword">var</span> regions = {
+  foo: <span class="hljs-string">"#bar"</span>,
+  baz: <span class="hljs-string">"#quux"</span>
+};
+
+rm.addRegions(regions, defaults);
+</code></pre>
+<p>In this example, all regions will be added as
+instances of <code>MyRegionType</code>.</p>
+<h2 id="regionmanager-get">RegionManager.get</h2>
+<p>A region instance can be retrieved from the
+RegionManager instance using the <code>get</code> method and
+passing in the name of the region.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+rm.addRegion(<span class="hljs-string">"foo"</span>, <span class="hljs-string">"#bar"</span>);
+
+<span class="hljs-keyword">var</span> region = rm.get(<span class="hljs-string">"foo"</span>);
+</code></pre>
+<h2 id="regionmanager-removeregion">RegionManager.removeRegion</h2>
+<p>A region can be removed by calling the <code>removeRegion</code>
+method and passing in the name of the region.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+rm.addRegion(<span class="hljs-string">"foo"</span>, <span class="hljs-string">"#bar"</span>);
+
+rm.removeRegion(<span class="hljs-string">"foo"</span>);
+</code></pre>
+<p>A region will have its <code>close</code> method called before
+it is removed from the RegionManager instance and
+<code>stopListening</code> is called.</p>
+<h2 id="regionmanager-removeregions">RegionManager.removeRegions</h2>
+<p>You can quickly remove all regions from the
+RegionManager instance by calling the <code>removeRegions</code>
+method.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+rm.addRegions({
+  foo: <span class="hljs-string">"#foo"</span>,
+  bar: <span class="hljs-string">"#bar"</span>,
+  baz: <span class="hljs-string">"#baz"</span>
+});
+
+rm.removeRegions();
+</code></pre>
+<p>This will close all regions, and remove them.</p>
+<h2 id="regionmanager-closeregions">RegionManager.closeRegions</h2>
+<p>You can quickly close all regions from the RegionManager
+instance by calling the <code>closeRegions</code> method.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+rm.addRegions({
+  foo: <span class="hljs-string">"#foo"</span>,
+  bar: <span class="hljs-string">"#bar"</span>,
+  baz: <span class="hljs-string">"#baz"</span>
+});
+
+rm.closeRegions();
+</code></pre>
+<p>This will close the regions without removing them
+from the RegionManager instance.</p>
+<h2 id="regionmanager-close">RegionManager.close</h2>
+<p>A RegionManager instance can be closed entirely by
+calling the <code>close</code> method. This will both close
+and remove all regions from the RegionManager instance.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+rm.addRegions({
+  foo: <span class="hljs-string">"#foo"</span>,
+  bar: <span class="hljs-string">"#bar"</span>,
+  baz: <span class="hljs-string">"#baz"</span>
+});
+
+rm.close();
+</code></pre>
+<h2 id="regionmanager-events">RegionManager Events</h2>
+<p>A RegionManager will trigger various events as it
+is being used.</p>
+<h3 id="region-add-event">region:add event</h3>
+<p>The RegionManager will trigger a &quot;region:add&quot;
+event when a region is added to the manager. This
+allows you to use the region instance immediately,
+or attach the region to an object that needs a
+reference to it:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+
+rm.on(<span class="hljs-string">"region:add"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(name, region)</span>{</span>
+
+  <span class="hljs-comment">// add the region instance to an object</span>
+  myObject[name] = region;
+
+});
+
+rm.addRegion(<span class="hljs-string">"foo"</span>, <span class="hljs-string">"#bar"</span>);
+</code></pre>
+<h3 id="region-remove-event">region:remove event</h3>
+<p>The RegionManager will trigger a &quot;region:remove&quot;
+event when a region is removed from the manager.
+This allows you to use the region instance one last
+time, or remove the region from an object that has a
+reference to it:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+
+rm.on(<span class="hljs-string">"region:remove"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(name, region)</span>{</span>
+
+  <span class="hljs-comment">// add the region instance to an object</span>
+  <span class="hljs-keyword">delete</span> myObject[name];
+
+});
+
+rm.addRegion(<span class="hljs-string">"foo"</span>, <span class="hljs-string">"#bar"</span>);
+
+rm.removeRegion(<span class="hljs-string">"foo"</span>);
+</code></pre>
+<h2 id="regionmanager-iterators">RegionManager Iterators</h2>
+<p>The RegionManager has several methods for iteration
+attached to it, from underscore.js. This works in the
+same way as the Backbone.Collection methods that have
+been imported. For example, you can easily iterate over
+the entire collection of region instances by calling
+the <code>each</code> method:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rm = <span class="hljs-keyword">new</span> Marionette.RegionManager();
+
+rm.each(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(region)</span>{</span>
+  <span class="hljs-comment">// do stuff w/ the region instance here</span>
+});
+</code></pre>
+<p>The list of underscore methods includes:</p>
+<ul>
+<li>forEach</li>
+<li>each</li>
+<li>map</li>
+<li>find</li>
+<li>detect</li>
+<li>filter</li>
+<li>select</li>
+<li>reject</li>
+<li>every</li>
+<li>all</li>
+<li>some</li>
+<li>any</li>
+<li>include</li>
+<li>contains</li>
+<li>invoke</li>
+<li>toArray</li>
+<li>first</li>
+<li>initial</li>
+<li>rest</li>
+<li>last</li>
+<li>without</li>
+<li>isEmpty</li>
+<li>pluck</li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../Marionette/regions/region.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../Marionette/behavior/behavior.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../../gitbook/app.js"></script>
+        
+    </body>
+</html>

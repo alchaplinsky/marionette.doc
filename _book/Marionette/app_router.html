@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>App Router | Marionette.js</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="alchapone">
+        <meta name="description" content="Book generated using GitBook">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../Marionette/controller.html" />
+        
+        
+        <link rel="prev" href="../Marionette/application_module.html" />
+        
+
+        <meta property="og:title" content="App Router | Marionette.js">
+        <meta property="og:site_name" content="Marionette.js">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/alchapone">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="alchapone/backbone-marionette" data-level="4" data-basepath=".." data-revision="1397492473730">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/alchapone/backbone-marionette" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/alchapone/backbone-marionette/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/alchapone/backbone-marionette/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../" >Marionette.js</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/alchapone" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/alchapone/backbone-marionette/edit/master/Marionette/app_router.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="Marionette/functions.html">
+                
+                <a href="../Marionette/functions.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="Marionette/application.html">
+                
+                <a href="../Marionette/application.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Application
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="Marionette/application_module.html">
+                
+                <a href="../Marionette/application_module.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Application Module
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="Marionette/app_router.html">
+                
+                <a href="../Marionette/app_router.html">
+                    <i class="fa fa-check"></i> <b>4)</b> App Router
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="Marionette/controller.html">
+                
+                <a href="../Marionette/controller.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Controller
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="Marionette/configuration/configuration.html">
+                
+                <a href="../Marionette/configuration/configuration.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Configuration
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1" data-path="Marionette/configuration/renderer.html">
+                            
+                            <a href="../Marionette/configuration/renderer.html">
+                                <i class="fa fa-check"></i> <b>6.1)</b> Renderer
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2" data-path="Marionette/configuration/template_cache.html">
+                            
+                            <a href="../Marionette/configuration/template_cache.html">
+                                <i class="fa fa-check"></i> <b>6.2)</b> TemplateCache
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7" data-path="Marionette/view/view.html">
+                
+                <a href="../Marionette/view/view.html">
+                    <i class="fa fa-check"></i> <b>7)</b> View
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1" data-path="Marionette/view/item_view.html">
+                            
+                            <a href="../Marionette/view/item_view.html">
+                                <i class="fa fa-check"></i> <b>7.1)</b> Item View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2" data-path="Marionette/view/collection_view.html">
+                            
+                            <a href="../Marionette/view/collection_view.html">
+                                <i class="fa fa-check"></i> <b>7.2)</b> Collection View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3" data-path="Marionette/view/composite_view.html">
+                            
+                            <a href="../Marionette/view/composite_view.html">
+                                <i class="fa fa-check"></i> <b>7.3)</b> Composite View
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4" data-path="Marionette/view/layout.html">
+                            
+                            <a href="../Marionette/view/layout.html">
+                                <i class="fa fa-check"></i> <b>7.4)</b> Layout
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8" data-path="Marionette/regions/region.html">
+                
+                <a href="../Marionette/regions/region.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Regions
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="Marionette/regions/region_manager.html">
+                            
+                            <a href="../Marionette/regions/region_manager.html">
+                                <i class="fa fa-check"></i> <b>8.1)</b> Region Manager
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="9" data-path="Marionette/behavior/behavior.html">
+                
+                <a href="../Marionette/behavior/behavior.html">
+                    <i class="fa fa-check"></i> <b>9)</b> Behavior
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="Marionette/behavior/behaviors.html">
+                            
+                            <a href="../Marionette/behavior/behaviors.html">
+                                <i class="fa fa-check"></i> <b>9.1)</b> Behaviors
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 23.529411764705884%;min-width: 17.647058823529413%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../Marionette/functions.html" title="Functions" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="../Marionette/application.html" title="Application" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="../Marionette/application_module.html" title="Application Module" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="../Marionette/app_router.html" title="App Router" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="../Marionette/controller.html" title="Controller" class="chapter  new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="../Marionette/configuration/configuration.html" title="Configuration" class="chapter  new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="../Marionette/configuration/renderer.html" title="Renderer" class="chapter  " data-progress="6.1" style="left: 41.1764705882353%;"></a>
+    
+        <a href="../Marionette/configuration/template_cache.html" title="TemplateCache" class="chapter  " data-progress="6.2" style="left: 47.05882352941177%;"></a>
+    
+        <a href="../Marionette/view/view.html" title="View" class="chapter  new-chapter" data-progress="7" style="left: 52.94117647058823%;"></a>
+    
+        <a href="../Marionette/view/item_view.html" title="Item View" class="chapter  " data-progress="7.1" style="left: 58.8235294117647%;"></a>
+    
+        <a href="../Marionette/view/collection_view.html" title="Collection View" class="chapter  " data-progress="7.2" style="left: 64.70588235294117%;"></a>
+    
+        <a href="../Marionette/view/composite_view.html" title="Composite View" class="chapter  " data-progress="7.3" style="left: 70.58823529411765%;"></a>
+    
+        <a href="../Marionette/view/layout.html" title="Layout" class="chapter  " data-progress="7.4" style="left: 76.47058823529412%;"></a>
+    
+        <a href="../Marionette/regions/region.html" title="Regions" class="chapter  new-chapter" data-progress="8" style="left: 82.3529411764706%;"></a>
+    
+        <a href="../Marionette/regions/region_manager.html" title="Region Manager" class="chapter  " data-progress="8.1" style="left: 88.23529411764706%;"></a>
+    
+        <a href="../Marionette/behavior/behavior.html" title="Behavior" class="chapter  new-chapter" data-progress="9" style="left: 94.11764705882354%;"></a>
+    
+        <a href="../Marionette/behavior/behaviors.html" title="Behaviors" class="chapter  " data-progress="9.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_1">
+                    
+                        <h1 id="marionette-approuter">Marionette.AppRouter</h1>
+<p>Reduce the boilerplate code of handling route events and then calling a single method on another object.
+Have your routers configured to call the method on your object, directly.</p>
+<h2 id="documentation-index">Documentation Index</h2>
+<ul>
+<li><a href="#configure-routes">Configure Routes</a></li>
+<li><a href="#configure-routes-in-constructor">Configure Routes In Constructor</a></li>
+<li><a href="#add-routes-at-runtime">Add Routes At Runtime</a></li>
+<li><a href="#specify-a-controller">Specify A Controller</a></li>
+<li><a href="#onroute">onRoute</a></li>
+</ul>
+<h2 id="configure-routes">Configure Routes</h2>
+<p>Configure an AppRouter with <code>appRoutes</code>. The route definition is passed on to Backbone&#39;s standard routing handlers. This means that you define routes like you normally would.  However, instead of providing a callback method that exists on the router, you provide a callback method that exists on the controller, which you specify for the router instance (see below.)</p>
+<pre><code class="lang-js">MyRouter = Backbone.Marionette.AppRouter.extend({
+  <span class="hljs-comment">// "someMethod" must exist at controller.someMethod</span>
+  appRoutes: {
+    <span class="hljs-string">"some/route"</span>: <span class="hljs-string">"someMethod"</span>
+  },
+
+  <span class="hljs-comment">/* standard routes can be mixed with appRoutes/Controllers above */</span>
+  routes : {
+    <span class="hljs-string">"some/otherRoute"</span> : <span class="hljs-string">"someOtherMethod"</span>
+  },
+  someOtherMethod : <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+    <span class="hljs-comment">// do something here.</span>
+  }
+
+});
+</code></pre>
+<p>You can also add standard routes to an AppRouter with methods on the router.</p>
+<h2 id="configure-routes-in-constructor">Configure Routes In Constructor</h2>
+<p>Routes can be defined through the constructor function options, as well.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> MyRouter = <span class="hljs-keyword">new</span> Marionette.AppRouter({
+  controller: myController,
+  appRoutes: {
+    <span class="hljs-string">"foo"</span>: <span class="hljs-string">"doFoo"</span>,
+    <span class="hljs-string">"bar/:id"</span>: <span class="hljs-string">"doBar"</span>
+  }
+});
+</code></pre>
+<p>This allows you to create router instances without having to <code>.extend</code>
+from the AppRouter. You can just create the instance with the routes defined
+in the constructor, as shown.</p>
+<h2 id="add-routes-at-runtime">Add Routes At Runtime</h2>
+<p>In addition to setting the <code>appRoutes</code> for an AppRouter, you can add app routes
+at runtime, to an instance of a router. This is done with the <code>appRoute()</code>
+method call. It works the same as the built-in <code>router.route()</code> call from
+Backbone&#39;s Router, but has all the same semantics and behavior of the <code>appRoutes</code>
+configuration.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> MyRouter = Marionette.AppRouter.extend({});
+
+<span class="hljs-keyword">var</span> router = <span class="hljs-keyword">new</span> MyRouter();
+router.appRoute(<span class="hljs-string">"/foo"</span>, <span class="hljs-string">"fooThat"</span>);
+</code></pre>
+<p>Also you can specify a controller with the multiple routes at runtime with method
+<code>processAppRoutes</code>. However, In this case the current controller of <code>AppRouter</code> will not change.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> MyRouter = Marionette.AppRouter.extend({});
+
+<span class="hljs-keyword">var</span> router = <span class="hljs-keyword">new</span> MyRouter();
+router.processAppRoutes(myController, {
+  <span class="hljs-string">"foo"</span>: <span class="hljs-string">"doFoo"</span>,
+  <span class="hljs-string">"bar/:id"</span>: <span class="hljs-string">"doBar"</span>
+});
+</code></pre>
+<h2 id="specify-a-controller">Specify A Controller</h2>
+<p>App routers can only use one <code>controller</code> object. You can either specify this
+directly in the router definition:</p>
+<pre><code class="lang-js">someController = {
+  someMethod: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> <span class="hljs-comment">/*...*/</span> }
+};
+
+Backbone.Marionette.AppRouter.extend({
+  controller: someController
+});
+</code></pre>
+<p>... or in a parameter to the constructor:</p>
+<pre><code class="lang-js">myObj = {
+  someMethod: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> <span class="hljs-comment">/*...*/</span> }
+};
+
+<span class="hljs-keyword">new</span> MyRouter({
+  controller: myObj
+});
+</code></pre>
+<p>The object that is used as the <code>controller</code> has no requirements, other than it will
+contain the methods that you specified in the <code>appRoutes</code>.</p>
+<p>It is recommended that you divide your controller objects into smaller pieces of related functionality
+and have multiple routers / controllers, instead of just one giant router and controller.</p>
+<h2 id="onroute">onRoute</h2>
+<p>If it exists, AppRouters will call the <code>onRoute</code> method whenever a user navigates within your app. The
+callback receives three arguments: the name, path, and arguments of the route.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Marionette/application_module.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Marionette/controller.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+    </body>
+</html>
