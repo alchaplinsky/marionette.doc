@@ -1,6 +1,6 @@
 # Official Backbone.Marionette Doc
 
-This Doc is build for developers so that it's easier to read and examine Marionettejs doc.
+This Doc is build for developers so that it's easier to read and examine Marionettejs v1.8.0 doc.
 Built using [Gitbook](https://github.com/GitbookIO/gitbook).
 
 
