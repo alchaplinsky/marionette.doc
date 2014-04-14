@@ -7,13 +7,13 @@ a way to get the same behaviors and conventions from your own code.
 
 ## Documentation Index
 
-* [Marionette.extend](#marionetteextend)
-* [Marionette.getOption](#marionettegetoption)
-* [Marionette.triggerMethod](#marionettetriggermethod)
-* [Marionette.bindEntityEvent](#marionettebindentityevents)
-* [Marionette.normalizeEvents](#marionettenormalizeevents)
-* [Marionette.normalizeUIKeys](#marionettenormalizeuikeys)
-* [Marionette.actAsCollection](#marionetteactascollection)
+* [Marionette.extend](#marionette-extend)
+* [Marionette.getOption](#marionette-getoption)
+* [Marionette.triggerMethod](#marionette-triggermethod)
+* [Marionette.bindEntityEvent](#marionette-bindentityevents)
+* [Marionette.normalizeEvents](#marionette-normalizeevents)
+* [Marionette.normalizeUIKeys](#marionette-normalizeuikeys)
+* [Marionette.actAsCollection](#marionette-actascollection)
 
 ## Marionette.extend
 

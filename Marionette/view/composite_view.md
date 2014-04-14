@@ -38,9 +38,9 @@ For more examples, see my blog post on
 
 ## Documentation Index
 
-* [Composite Model `template`](#composite-model-template)
-* [CompositeView's `itemViewContainer`](#compositeviews-itemviewcontainer)
-* [CompositeView's `appendHtml`](#compositeviews-appendhtml)
+* [Composite Model `template`](#composite-model-template-)
+* [CompositeView's `itemViewContainer`](#compositeview-s-itemviewcontainer-)
+* [CompositeView's `appendHtml`](#compositeview-s-appendhtml-)
 * [Recursive By Default](#recursive-by-default)
 * [Model And Collection Rendering](#model-and-collection-rendering)
 * [Events And Callbacks](#events-and-callbacks)

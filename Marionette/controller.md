@@ -8,7 +8,7 @@ and coordination of other objects, views, and more.
 
 * [Basic Use](#basic-use)
 * [Closing A Controller](#closing-a-controller)
-* [On The Name 'Controller'](#on-the-name-controller)
+* [On The Name 'Controller'](#on-the-name-controller-)
 
 ## Basic Use
 

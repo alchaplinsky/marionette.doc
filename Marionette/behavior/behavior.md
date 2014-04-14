@@ -11,8 +11,8 @@ A `Behavior` is an  isolated set of DOM / user interactions that can be mixed in
   * [Event proxy](#the-event-proxy)
   * [Model Events](#model-events)
   * [Collection Events](#model-events)
-  * [$](#$)
-  * [$el](#$el)
+  * [$](#-)
+  * [$el](#-el)
   * [Defaults](#defaults)
   * [View](#view)
 
