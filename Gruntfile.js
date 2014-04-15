@@ -9,7 +9,8 @@ module.exports = function (grunt) {
         'gitbook': {
             development: {
                 input: "./",
-                github: "alchapone/marionette.doc"
+                github: "alchapone/marionette.doc",
+                theme: "/usr/local/lib/node_modules/gitbook/theme"
             }
         },
         'gh-pages': {
